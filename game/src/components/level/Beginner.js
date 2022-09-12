@@ -1,32 +1,30 @@
-import React from "react";
-import BeginnerTiles from "../tiles/beginnerTiles";
+import React, { useState } from "react";
+import BeginnerTilesList from "../tiles/beginnerTilesList";
+import randomTile from "../tiles/randomTile";
 import "../../style.css";
 
 const Beginner = () => {
-  function shuffle(array) {
-    let currentIndex = array.length;
-    while (currentIndex !== 0) {
-      let randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
+  const [selected, setSelected] = useState(false);
 
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex],
-        array[currentIndex],
-      ];
-    }
-    return array;
-  }
+  const randomBeginner = randomTile(BeginnerTilesList);
 
-  shuffle(BeginnerTiles);
+  const onSelected = () => {
+    setSelected();
+  };
 
   return (
     <div>
       <h1>Beginner Game</h1>
       <ul>
-        {BeginnerTiles.map((tile) => {
+        {randomBeginner.map((tile, index) => {
           return (
-            <li>
-              <img className="tile-img" src={tile.url} alt={tile.title} />
+            <li key={index}>
+              <img
+                onClick={onSelected}
+                className={selected ? "tile-img tile-selected" : "tile-img"}
+                src={tile.url}
+                alt={tile.title}
+              />
             </li>
           );
         })}
