@@ -1,7 +1,7 @@
 const tilesList = [
   {
     title: "orange",
-    url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit2_tbklqu.jpg",
+    url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   },
   {
     title: "cherry",
@@ -26,5 +26,25 @@ const tilesList = [
   {
     title: "apple",
     url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit1_xb2mlb.jpg",
+  },
+  {
+    title: "raspberry",
+    url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit11_rjdaww.jpg",
+  },
+  {
+    title: "pear",
+    url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit8_qw7h5e.jpg",
+  },
+  {
+    title: "lemon",
+    url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit2_tbklqu.jpg",
+  },
+  {
+    title: "peach",
+    url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit10_qwjjwp.jpg",
+  },
+  {
+    title: "banana",
+    url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit12_gsax4a.jpg",
   },
 ];

@@ -4,12 +4,14 @@ import randomTile from "../tiles/randomTile";
 import "../../style.css";
 
 const Beginner = () => {
-  const [selected, setSelected] = useState(false);
+  const [selected, setSelected] = useState(null);
 
   const randomBeginner = randomTile(BeginnerTilesList);
 
-  const onSelected = () => {
-    setSelected();
+  const onSelected = (id) => {
+    if(tile.id === id) {
+      setSelected();
+    }
   };
 
   return (
@@ -20,7 +22,7 @@ const Beginner = () => {
           return (
             <li key={index}>
               <img
-                onClick={onSelected}
+                onClick={() => onSelected(tile.id)}
                 className={selected ? "tile-img tile-selected" : "tile-img"}
                 src={tile.url}
                 alt={tile.title}
