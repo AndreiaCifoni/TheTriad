@@ -71,8 +71,38 @@ const TestCode = () => {
   const onLevel1Click = (index2, index1) => {
     const y = tileLevel1.indexOf(index1);
     const x = index2;
-    console.log(`y is ${y}`);
-    console.log(`x is ${x}`);
+    overlappingTiles1(x, y);
+  };
+
+  const overlappingTiles1 = (x, y) => {
+    const tileTopLeft = tileLevel2[x - 1][y - 1];
+    const tileTopRight = tileLevel2[x - 1][y];
+    const tileBottomLeft = tileLevel2[x][y - 1];
+    const tileBottomRight = tileLevel2[x][y];
+    isTileFree(tileTopLeft, tileTopRight, tileBottomLeft, tileBottomRight);
+    return console.log([
+      tileTopLeft,
+      tileTopRight,
+      tileBottomLeft,
+      tileBottomRight,
+    ]);
+  };
+
+  const isTileFree = (
+    tileTopLeft,
+    tileTopRight,
+    tileBottomLeft,
+    tileBottomRight
+  ) => {
+    if (
+      tileTopLeft === null &&
+      tileTopRight === null &&
+      tileBottomLeft === null &&
+      tileBottomRight === null
+    ) {
+      return console.log("is free");
+    }
+    return console.log("not free");
   };
 
   return (
@@ -114,7 +144,7 @@ const TestCode = () => {
 
 export default TestCode;
 
-//get the tile clicled
-//get the ones touching
+//get the tile clicled - DONE
+//get the ones touching - DONE
 //is free?
 //when clicked transform in null on the tileLevel
