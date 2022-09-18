@@ -68,22 +68,23 @@ const TestCode = () => {
     [tile2, tile3, tile1],
   ];
 
-  const onLevel1Click = (index, x) => {
-    const y = tileLevel1.indexOf(x);
-    console.log(y);
-    console.log(index);
+  const onLevel1Click = (index2, index1) => {
+    const y = tileLevel1.indexOf(index1);
+    const x = index2;
+    console.log(`y is ${y}`);
+    console.log(`x is ${x}`);
   };
 
   return (
     <div>
       <div className="level1">
-        {tileLevel1.map((tiles, x) => {
+        {tileLevel1.map((tiles, index1) => {
           return (
             <div>
-              {tiles.map((tile, index, x) => {
+              {tiles.map((tile, index2, index1) => {
                 return (
                   <img
-                    onClick={() => onLevel1Click(index, x)}
+                    onClick={() => onLevel1Click(index2, index1)}
                     className="tile-img"
                     src={tile.url}
                     alt={tile.title}
