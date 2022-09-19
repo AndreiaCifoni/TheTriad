@@ -65,8 +65,16 @@ const TestCode = () => {
   const tileLevel2 = [
     [null, null, tile2],
     [null, null, tile3],
-    [tile2, tile3, tile1],
+    [tile9, tile8, tile7],
   ];
+
+  // const tileLevel3 = [
+  //   [tile5, tile6, tile4],
+  //   [tile9, tile7, tile8],
+  //   [tile1, tile2, tile3],
+  // ];
+
+  // const boardGame = [tileLevel1, tileLevel2, tileLevel3];
 
   //selected will pass the value to bottom
   const [selected, setSelected] = useState(null);
@@ -83,6 +91,12 @@ const TestCode = () => {
 
   //**** I have to change logic so index of lapping tiles of the borders don't be negative
   const overlappingTiles1 = (x, y) => {
+    // const getTileTopLeft = () => {
+    //   if((x-1) === null || (y-1) === null){
+    //     return null
+    //   }
+    //   return tileLevel2[x-1][y-1]
+    // }
     const tileTopLeft = tileLevel2[x - 1][y - 1];
     const tileTopRight = tileLevel2[x - 1][y];
     const tileBottomLeft = tileLevel2[x][y - 1];
