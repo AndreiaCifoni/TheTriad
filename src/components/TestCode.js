@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style.css";
 
 const TestCode = () => {
@@ -63,17 +63,25 @@ const TestCode = () => {
   ];
 
   const tileLevel2 = [
-    [tile3, tile1, tile2],
-    [tile1, tile2, tile3],
+    [null, null, tile2],
+    [null, null, tile3],
     [tile2, tile3, tile1],
   ];
+
+  //selected will pass the value to bottom
+  const [selected, setSelected] = useState(null);
+  //const [deleteTile, setDeleteTile] = useState([]);
 
   const onLevel1Click = (index2, index1) => {
     const y = tileLevel1.indexOf(index1);
     const x = index2;
     overlappingTiles1(x, y);
+    setSelected(tileLevel1[y][x]);
+    //should I use setDeleteTile in a useEffect?...in delete > set tile to null and change its class so I can use visibility: hidden
+    //setDeleteTile((tileLevel1[y][x] = null));
   };
 
+  //**** I have to change logic so index of lapping tiles of the borders don't be negative
   const overlappingTiles1 = (x, y) => {
     const tileTopLeft = tileLevel2[x - 1][y - 1];
     const tileTopRight = tileLevel2[x - 1][y];
@@ -100,9 +108,9 @@ const TestCode = () => {
       tileBottomLeft === null &&
       tileBottomRight === null
     ) {
-      return console.log("is free");
+      return true;
     }
-    return console.log("not free");
+    return false;
   };
 
   return (
@@ -116,8 +124,8 @@ const TestCode = () => {
                   <img
                     onClick={() => onLevel1Click(index2, index1)}
                     className="tile-img"
-                    src={tile.url}
-                    alt={tile.title}
+                    src={tile?.url}
+                    alt={tile?.title}
                   />
                 );
               })}
@@ -131,7 +139,7 @@ const TestCode = () => {
             <div>
               {tiles.map((tile) => {
                 return (
-                  <img className="tile-img" src={tile.url} alt={tile.title} />
+                  <img className="tile-img" src={tile?.url} alt={tile?.title} />
                 );
               })}
             </div>
@@ -146,5 +154,6 @@ export default TestCode;
 
 //get the tile clicled - DONE
 //get the ones touching - DONE
-//is free?
+//is free? - DONE
+//save the value of clicked to pass to bottom holder - DONE
 //when clicked transform in null on the tileLevel
