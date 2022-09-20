@@ -63,8 +63,8 @@ const TestCode = () => {
   ];
 
   const tileLevel2 = [
-    [null, null, tile2],
-    [null, null, tile3],
+    [tile1, tile5, tile2],
+    [tile4, tile6, tile3],
     [tile9, tile8, tile7],
   ];
 
@@ -81,51 +81,51 @@ const TestCode = () => {
   //const [deleteTile, setDeleteTile] = useState([]);
 
   const onLevel1Click = (index2, index1) => {
-    const y = tileLevel1.indexOf(index1);
-    const x = index2;
-    overlappingTiles1(x, y);
-    setSelected(tileLevel1[y][x]);
+    const x = tileLevel1.indexOf(index1);
+    const y = index2;
+
+    setSelected(tileLevel1[x][y]);
     //should I use setDeleteTile in a useEffect?...in delete > set tile to null and change its class so I can use visibility: hidden
     //setDeleteTile((tileLevel1[y][x] = null));
   };
 
-  //**** I have to change logic so index of lapping tiles of the borders don't be negative
-  const overlappingTiles1 = (x, y) => {
-    // const getTileTopLeft = () => {
-    //   if((x-1) === null || (y-1) === null){
-    //     return null
-    //   }
-    //   return tileLevel2[x-1][y-1]
-    // }
-    const tileTopLeft = tileLevel2[x - 1][y - 1];
-    const tileTopRight = tileLevel2[x - 1][y];
-    const tileBottomLeft = tileLevel2[x][y - 1];
-    const tileBottomRight = tileLevel2[x][y];
-    isTileFree(tileTopLeft, tileTopRight, tileBottomLeft, tileBottomRight);
-    return console.log([
-      tileTopLeft,
-      tileTopRight,
-      tileBottomLeft,
-      tileBottomRight,
-    ]);
+  //logic of "getTile..." only works if we click on a bottom level to check for the top level if tile is blocked (BOTTOM >> TOP)...
+  //the other way( top>>bottom) will NOT work, since the coordinates of top are +1 and not -1
+  const getTileTopLeft = (x, y, tileUpperLevel) => {
+    if (x - 1 < 0 || y - 1 < 0) {
+      return null;
+    } else if (
+      x - 1 > tileUpperLevel.length - 1 ||
+      y - 1 > tileUpperLevel[0].length - 1
+    ) {
+      return null;
+    }
+    return tileUpperLevel[x - 1][y - 1];
   };
 
-  const isTileFree = (
-    tileTopLeft,
-    tileTopRight,
-    tileBottomLeft,
-    tileBottomRight
-  ) => {
-    if (
-      tileTopLeft === null &&
-      tileTopRight === null &&
-      tileBottomLeft === null &&
-      tileBottomRight === null
-    ) {
-      return true;
+  const getTileTopRight = (x, y, tileUpperLevel) => {
+    if (x - 1 < 0) {
+      return null;
+    } else if (x - 1 > tileUpperLevel.length - 1) {
+      return null;
     }
-    return false;
+    return tileUpperLevel[x - 1][y];
   };
+
+  const getTileBottomLeft = (x, y, tileUpperLevel) => {
+    if (y - 1 < 0) {
+      return null;
+    } else if (y - 1 > tileUpperLevel[0].length - 1) {
+      return null;
+    }
+    return tileUpperLevel[x][y - 1];
+  };
+
+  const getTileBottomRight = (x, y, tileUpperLevel) => {
+    return tileUpperLevel[x][y];
+  };
+
+  console.log(getTileBottomLeft(2, 2, tileLevel2));
 
   return (
     <div>
