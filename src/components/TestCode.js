@@ -89,44 +89,6 @@ const TestCode = () => {
     //setDeleteTile((tileLevel1[y][x] = null));
   };
 
-  //logic of "getTile..." only works if we click on a bottom level to check for the top level if tile is blocked (BOTTOM >> TOP)...
-  //the other way( top>>bottom) will NOT work, since the coordinates of top are +1 and not -1
-  const getTileTopLeft = (x, y, tileUpperLevel) => {
-    if (x - 1 < 0 || y - 1 < 0) {
-      return null;
-    } else if (
-      x - 1 > tileUpperLevel.length - 1 ||
-      y - 1 > tileUpperLevel[0].length - 1
-    ) {
-      return null;
-    }
-    return tileUpperLevel[x - 1][y - 1];
-  };
-
-  const getTileTopRight = (x, y, tileUpperLevel) => {
-    if (x - 1 < 0) {
-      return null;
-    } else if (x - 1 > tileUpperLevel.length - 1) {
-      return null;
-    }
-    return tileUpperLevel[x - 1][y];
-  };
-
-  const getTileBottomLeft = (x, y, tileUpperLevel) => {
-    if (y - 1 < 0) {
-      return null;
-    } else if (y - 1 > tileUpperLevel[0].length - 1) {
-      return null;
-    }
-    return tileUpperLevel[x][y - 1];
-  };
-
-  const getTileBottomRight = (x, y, tileUpperLevel) => {
-    return tileUpperLevel[x][y];
-  };
-
-  console.log(getTileBottomLeft(2, 2, tileLevel2));
-
   return (
     <div>
       <div className="level1">
@@ -165,9 +127,3 @@ const TestCode = () => {
 };
 
 export default TestCode;
-
-//get the tile clicled - DONE
-//get the ones touching - DONE
-//is free? - DONE
-//save the value of clicked to pass to bottom holder - DONE
-//when clicked transform in null on the tileLevel
