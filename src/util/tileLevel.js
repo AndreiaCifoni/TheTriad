@@ -95,9 +95,15 @@ const isTileFree = (
   return false;
 };
 
-//-----------------Bottom Tile Holder -----------------
-const arr = [tile1, tile2, tile3, tile1, tile4, tile1, tile2];
-
-const tilesInOrder = (bottomTileHolder) => {
-  return tile.sort();
+module.exports = {
+  getEvenLevelTileTopLeft,
+  getEvenLevelTileTopRight,
+  getEvenLevelTileBottomLeft,
+  getEvenLevelTileBottomRight,
+  getOddLevelTileTopLeft,
+  getOddLevelTileTopRight,
+  getOddLevelTileBottomLeft,
+  getOddLevelTileBottomRight,
+  removeTile,
+  isTileFree,
 };
