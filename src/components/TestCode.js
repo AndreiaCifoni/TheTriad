@@ -58,8 +58,8 @@ const TestCode = () => {
 
   const tileLevel1 = [
     [tile1, tile2, tile3],
-    [tile5, tile6, tile4],
-    [tile9, tile7, tile8],
+    [tile4, tile5, tile6],
+    [tile8, tile7, tile9],
   ];
 
   const tileLevel2 = [
@@ -68,13 +68,13 @@ const TestCode = () => {
     [tile9, tile8, tile7],
   ];
 
-  // const tileLevel3 = [
-  //   [tile5, tile6, tile4],
-  //   [tile9, tile7, tile8],
-  //   [tile1, tile2, tile3],
-  // ];
+  const tileLevel3 = [
+    [tile5, tile6, tile4],
+    [tile9, tile7, tile8],
+    [tile1, tile2, tile3],
+  ];
 
-  // const boardGame = [tileLevel1, tileLevel2, tileLevel3];
+  const boardGame = [tileLevel1, tileLevel2, tileLevel3];
 
   //selected will pass the value to bottom
   const [selected, setSelected] = useState(null);
@@ -88,6 +88,43 @@ const TestCode = () => {
     //should I use setDeleteTile in a useEffect?...in delete > set tile to null and change its class so I can use visibility: hidden
     //setDeleteTile((tileLevel1[y][x] = null));
   };
+
+  // const removeTile = tileLevel1.map((tileRow) => {
+  //   return tileRow.map((tile) => {
+  //     if (tile === tileLevel1[1][1]) {
+  //       return (tile = null);
+  //     }
+  //     return tile;
+  //   });
+  // });
+
+  // console.log(removeTile);
+
+  const removeTile = (x, y, tileLevel) => {
+    return tileLevel.map((tileRow) => {
+      return tileRow.map((tile) => {
+        if (tile === tileLevel[x][y]) {
+          return null;
+        }
+        return tile;
+      });
+    });
+  };
+
+  console.log(removeTile(2, 2, tileLevel2));
+
+  // const removeTile = (x, y, tileLevel) => {
+  //   tileLevel.map((tileRow, i, x, y, tileLevel) => {
+  //     return tileRow.map((tile, i, x, y, tileLevel) => {
+  //       if (tile === tileLevel[x][y]) {
+  //         return (tile = null);
+  //       }
+  //       return tile;
+  //     });
+  //   });
+  // };
+
+  // console.log(removeTile(1, 2, tileLevel1));
 
   return (
     <div>
