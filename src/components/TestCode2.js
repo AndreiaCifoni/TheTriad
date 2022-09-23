@@ -65,35 +65,22 @@ const getOddLevelTileBottomRight = (x, y, tileUpperLevel) => {
 
 //-----------------Remove tile -----------------
 
-const tileLevel1 = [
-  [tile1, tile2, tile3],
-  [tile5, tile6, tile4],
-  [tile9, tile7, tile8],
-];
-const removeTile = tileLevel1.map((tiles) => {
-  tiles.filter((tile) => {
-    if (tile === tile6) {
-      return (tile = null);
-    }
-    return tile;
+const removeTile = (x, y, tileLevel) => {
+  return tileLevel.map((tileRow) => {
+    return tileRow.map((tile) => {
+      if (tile === tileLevel[x][y]) {
+        return null;
+      }
+      return tile;
+    });
   });
-});
+};
 
-console.log(removeTile);
+//-----------------Check for tile blocked -----------------
 
-const newArray = tileLevel1[1].map((tile) => {
-  if (tile === tile6) {
-    return (tile = null);
-  }
-  return tile;
-});
-// const removeTile = (tileLevel, x, y) => {
-//   tileLevel.map((tile, x, y) => {
-//     if (tile === tileLevel[x][y]) {
-//       return (tile = null);
-//     }
-//     return tile;
-//   });
-// };
-
-// console.log(removeTile(1, 2, tileLevel1));
+const isTileBlocked = (
+  getTileTopLeft,
+  getTileTopRight,
+  getTileBottomLeft,
+  getTileBottomRight
+) => {};

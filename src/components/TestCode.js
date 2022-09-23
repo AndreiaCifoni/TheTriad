@@ -89,43 +89,6 @@ const TestCode = () => {
     //setDeleteTile((tileLevel1[y][x] = null));
   };
 
-  // const removeTile = tileLevel1.map((tileRow) => {
-  //   return tileRow.map((tile) => {
-  //     if (tile === tileLevel1[1][1]) {
-  //       return (tile = null);
-  //     }
-  //     return tile;
-  //   });
-  // });
-
-  // console.log(removeTile);
-
-  const removeTile = (x, y, tileLevel) => {
-    return tileLevel.map((tileRow) => {
-      return tileRow.map((tile) => {
-        if (tile === tileLevel[x][y]) {
-          return null;
-        }
-        return tile;
-      });
-    });
-  };
-
-  console.log(removeTile(2, 2, tileLevel2));
-
-  // const removeTile = (x, y, tileLevel) => {
-  //   tileLevel.map((tileRow, i, x, y, tileLevel) => {
-  //     return tileRow.map((tile, i, x, y, tileLevel) => {
-  //       if (tile === tileLevel[x][y]) {
-  //         return (tile = null);
-  //       }
-  //       return tile;
-  //     });
-  //   });
-  // };
-
-  // console.log(removeTile(1, 2, tileLevel1));
-
   return (
     <div>
       <div className="level1">
