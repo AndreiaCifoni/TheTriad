@@ -89,6 +89,13 @@ const TestCode = () => {
     //setDeleteTile((tileLevel1[y][x] = null));
   };
 
+  const arr = [tile1, tile2, tile3, tile1, tile4, tile1, tile2];
+
+  const tilesInOrder = (bottomTileHolder) => {
+    return bottomTileHolder.sort();
+  };
+  console.log(tilesInOrder(arr));
+
   return (
     <div>
       <div className="level1">

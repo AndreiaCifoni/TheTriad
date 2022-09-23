@@ -76,11 +76,28 @@ const removeTile = (x, y, tileLevel) => {
   });
 };
 
-//-----------------Check for tile blocked -----------------
+//-----------------Check for free tile -----------------
 
-const isTileBlocked = (
+const isTileFree = (
   getTileTopLeft,
   getTileTopRight,
   getTileBottomLeft,
   getTileBottomRight
-) => {};
+) => {
+  if (
+    getTileTopLeft === null &&
+    getTileTopRight === null &&
+    getTileBottomLeft === null &&
+    getTileBottomRight === null
+  ) {
+    return true;
+  }
+  return false;
+};
+
+//-----------------Bottom Tile Holder -----------------
+const arr = [tile1, tile2, tile3, tile1, tile4, tile1, tile2];
+
+const tilesInOrder = (bottomTileHolder) => {
+  return tile.sort();
+};
