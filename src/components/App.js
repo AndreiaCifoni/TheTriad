@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Beginner from "./level/Beginner";
+import BeginnerBoard from "./difficulty/BeginnerBoard";
 import TestCode from "./TestCode";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
     <div>
       <Routes>
         <Route path={"/"} element={<Home />} />
-        <Route path={"/beginner"} element={<Beginner />} />
+        <Route path={"/beginner"} element={<BeginnerBoard />} />
         <Route path={"/test"} element={<TestCode />} />
       </Routes>
     </div>
