@@ -2,24 +2,20 @@
   position: absolute;
 }
 
-.level1 {
+.tileLevel2Position {
   position: relative;
-  top: 0;
-  left: 0;
-}
-
-.level2 {
-  position: relative;
-  top: -130px;
   left: 25px;
-  z-index: 10;
+}
+.tileLevel3Position {
+  position: relative;
 } */
 
 .tile-img {
   width: 50px;
   height: 50px;
+  border: 2px solid gray;
 }
 
-.tile-selected {
+/* .tile-selected {
   visibility: hidden;
-}
+} */
