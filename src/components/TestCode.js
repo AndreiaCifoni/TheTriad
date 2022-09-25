@@ -1,5 +1,6 @@
-
-//   const onLevel1Click = (index2, index1) => {
-//     const x = tileLevel1.indexOf(index1);
-//     const y = index2;
-
+// const tileUpperLevel = () => {
+//   if (beginnerLevelsLayout[z + 1] > beginnerLevelsLayout.length - 1) {
+//     return null;
+//   }
+//   return beginnerLevelsLayout[z + 1];
+// };
