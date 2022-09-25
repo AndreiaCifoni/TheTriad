@@ -1,5 +1,8 @@
-//-----------------for EVEN Tile Upper Level -----------------
-const getEvenLevelTileTopLeft = (x, y, tileUpperLevel) => {
+//-----------------for all Tile Upper Level -----------------
+const getTileTopLeft = (x, y, z, tileUpperLevel) => {
+  if ((z + 1) % 2 === 0) {
+    return tileUpperLevel[x][y];
+  }
   if (x - 1 < 0 || y - 1 < 0) {
     return null;
   } else if (
@@ -11,7 +14,13 @@ const getEvenLevelTileTopLeft = (x, y, tileUpperLevel) => {
   return tileUpperLevel[x - 1][y - 1];
 };
 
-const getEvenLevelTileTopRight = (x, y, tileUpperLevel) => {
+const getTileTopRight = (x, y, z, tileUpperLevel) => {
+  if ((z + 1) % 2 === 0) {
+    if (y + 1 > tileUpperLevel[0].length - 1) {
+      return null;
+    }
+    return tileUpperLevel[x][y + 1];
+  }
   if (x - 1 < 0) {
     return null;
   } else if (x - 1 > tileUpperLevel.length - 1) {
@@ -20,7 +29,13 @@ const getEvenLevelTileTopRight = (x, y, tileUpperLevel) => {
   return tileUpperLevel[x - 1][y];
 };
 
-const getEvenLevelTileBottomLeft = (x, y, tileUpperLevel) => {
+const getTileBottomLeft = (x, y, z, tileUpperLevel) => {
+  if ((z + 1) % 2 === 0) {
+    if (x + 1 > tileUpperLevel.length - 1) {
+      return null;
+    }
+    return tileUpperLevel[x + 1][y];
+  }
   if (y - 1 < 0) {
     return null;
   } else if (y - 1 > tileUpperLevel[0].length - 1) {
@@ -29,38 +44,17 @@ const getEvenLevelTileBottomLeft = (x, y, tileUpperLevel) => {
   return tileUpperLevel[x][y - 1];
 };
 
-const getEvenLevelTileBottomRight = (x, y, tileUpperLevel) => {
+const getTileBottomRight = (x, y, z, tileUpperLevel) => {
+  if ((z + 1) % 2 === 0) {
+    if (
+      x + 1 > tileUpperLevel.length - 1 ||
+      y + 1 > tileUpperLevel[0].length - 1
+    ) {
+      return null;
+    }
+    return tileUpperLevel[x + 1][y + 1];
+  }
   return tileUpperLevel[x][y];
-};
-
-//-----------------for ODD Tile Upper Level -----------------
-
-const getOddLevelTileTopLeft = (x, y, tileUpperLevel) => {
-  return tileUpperLevel[x][y];
-};
-
-const getOddLevelTileTopRight = (x, y, tileUpperLevel) => {
-  if (y + 1 > tileUpperLevel[0].length - 1) {
-    return null;
-  }
-  return tileUpperLevel[x][y + 1];
-};
-
-const getOddLevelTileBottomLeft = (x, y, tileUpperLevel) => {
-  if (x + 1 > tileUpperLevel.length - 1) {
-    return null;
-  }
-  return tileUpperLevel[x + 1][y];
-};
-
-const getOddLevelTileBottomRight = (x, y, tileUpperLevel) => {
-  if (
-    x + 1 > tileUpperLevel.length - 1 ||
-    y + 1 > tileUpperLevel[0].length - 1
-  ) {
-    return null;
-  }
-  return tileUpperLevel[x + 1][y + 1];
 };
 
 //-----------------Remove tile -----------------
@@ -78,17 +72,12 @@ const removeTile = (x, y, tileLevel) => {
 
 //-----------------Check for free tile -----------------
 
-const isTileFree = (
-  getTileTopLeft,
-  getTileTopRight,
-  getTileBottomLeft,
-  getTileBottomRight
-) => {
+const isTileFree = (x, y, z, tileUpperLevel) => {
   if (
-    getTileTopLeft === null &&
-    getTileTopRight === null &&
-    getTileBottomLeft === null &&
-    getTileBottomRight === null
+    getTileTopLeft() === null &&
+    getTileTopRight() === null &&
+    getTileBottomLeft() === null &&
+    getTileBottomRight() === null
   ) {
     return true;
   }
@@ -96,14 +85,10 @@ const isTileFree = (
 };
 
 module.exports = {
-  getEvenLevelTileTopLeft,
-  getEvenLevelTileTopRight,
-  getEvenLevelTileBottomLeft,
-  getEvenLevelTileBottomRight,
-  getOddLevelTileTopLeft,
-  getOddLevelTileTopRight,
-  getOddLevelTileBottomLeft,
-  getOddLevelTileBottomRight,
+  getTileTopLeft,
+  getTileTopRight,
+  getTileBottomLeft,
+  getTileBottomRight,
   removeTile,
   isTileFree,
 };
