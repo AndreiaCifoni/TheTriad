@@ -74,10 +74,10 @@ const removeTile = (x, y, tileLevel) => {
 
 const isTileFree = (x, y, z, tileUpperLevel) => {
   if (
-    getTileTopLeft() === null &&
-    getTileTopRight() === null &&
-    getTileBottomLeft() === null &&
-    getTileBottomRight() === null
+    getTileTopLeft(x, y, z, tileUpperLevel) === null &&
+    getTileTopRight(x, y, z, tileUpperLevel) === null &&
+    getTileBottomLeft(x, y, z, tileUpperLevel) === null &&
+    getTileBottomRight(x, y, z, tileUpperLevel) === null
   ) {
     return true;
   }

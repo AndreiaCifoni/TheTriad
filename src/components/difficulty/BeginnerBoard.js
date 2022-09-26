@@ -5,7 +5,14 @@ import {
   tileLevel3,
   beginnerLevelsLayout,
 } from "../../util/tiles/beginnerTiles";
-import { removeTile } from "../../util/tileLevelFunctions";
+import {
+  getTileTopLeft,
+  getTileTopRight,
+  getTileBottomLeft,
+  getTileBottomRight,
+  removeTile,
+  isTileFree,
+} from "../../util/tileLevelFunctions";
 import "../../style.css";
 
 const BeginnerBoard = () => {
@@ -41,7 +48,7 @@ const BeginnerBoard = () => {
     // console.log(
     //   getEvenLevelTileBottomRight(x, y, tileUpperLevel, beginnerLevelsLayout)
     // );
-
+    isTileFree(x, y, z, tileUpperLevel);
     removeTile(x, y, tileLevel);
   };
 
