@@ -72,11 +72,11 @@ const removeTile = (x, y, tileLevel) => {
 
 //-----------------Get TileUpperLevel -----------------
 
-const getTileUpperLevel = (z, levelsLayout) => {
-  if (z + 1 > levelsLayout.length - 1) {
+const getTileUpperLevel = (z, levelLayout) => {
+  if (z + 1 > levelLayout.length - 1) {
     return null;
   }
-  return levelsLayout[z + 1];
+  return levelLayout[z + 1];
 };
 //-----------------Check for free tile -----------------
 

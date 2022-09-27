@@ -3,7 +3,7 @@ import {
   tileLevel1,
   tileLevel2,
   tileLevel3,
-  beginnerLevelsLayout,
+  levelLayout,
 } from "../../util/tiles/beginnerTiles";
 import {
   getTileTopLeft,
@@ -16,13 +16,13 @@ import {
 } from "../../util/tileLevelFunctions";
 import "../../style.css";
 
-const BeginnerBoard = () => {
+const Board = () => {
   const onTileClick = (layoutIndex, rowIndex, columnIndex) => {
     const z = layoutIndex;
     const x = rowIndex;
     const y = columnIndex;
-    const tileLevel = beginnerLevelsLayout[z];
-    const tileUpperLevel = getTileUpperLevel(z, beginnerLevelsLayout);
+    const tileLevel = levelLayout[z];
+    const tileUpperLevel = getTileUpperLevel(z, levelLayout);
 
     isTileFree(x, y, z, tileUpperLevel);
     removeTile(x, y, tileLevel);
@@ -30,7 +30,7 @@ const BeginnerBoard = () => {
 
   return (
     <div>
-      {beginnerLevelsLayout.map((tilelevel, layoutIndex) => {
+      {levelLayout.map((tilelevel, layoutIndex) => {
         return tilelevel.map((tileRow, rowIndex) => {
           return (
             <div>
@@ -60,4 +60,4 @@ const BeginnerBoard = () => {
   );
 };
 
-export default BeginnerBoard;
+export default Board;
