@@ -12,56 +12,34 @@ import {
   getTileBottomRight,
   removeTile,
   isTileFree,
+  getTileUpperLevel,
 } from "../../util/tileLevelFunctions";
 import "../../style.css";
 
 const BeginnerBoard = () => {
-  const onTileClick = (index1, index2, index3) => {
-    const z = index1;
-    const x = index2;
-    const y = index3;
+  const onTileClick = (layoutIndex, rowIndex, columnIndex) => {
+    const z = layoutIndex;
+    const x = rowIndex;
+    const y = columnIndex;
     const tileLevel = beginnerLevelsLayout[z];
+    const tileUpperLevel = getTileUpperLevel(z, beginnerLevelsLayout);
 
-    ////tileUpperLevel is returning "undefined" instead of "null" when > than (length -1)... I tried a if condition:
-    // const tileUpperLevel = (z, beginnerLevelsLayout) => {
-    //   if (beginnerLevelsLayout[z + 1] > beginnerLevelsLayout.length - 1) {
-    //     return null;
-    //   }
-    //   return beginnerLevelsLayout[z + 1];
-    // };
-    // console.log(tileUpperLevel(z, beginnerLevelsLayout));
-
-    const tileUpperLevel = beginnerLevelsLayout[z + 1];
-
-    ////the function "getEvenLevelTileBottomRight" is here just to test. It will be refactored to fit EVEN and ODD levels
-    // const getEvenLevelTileBottomRight = (
-    //   x,
-    //   y,
-    //   tileUpperLevel,
-    //   beginnerLevelsLayout
-    // ) => {
-    //   if (tileUpperLevel > beginnerLevelsLayout.length - 1) {
-    //     return null;
-    //   }
-    //   return tileUpperLevel[x][y];
-    // };
-    // console.log(
-    //   getEvenLevelTileBottomRight(x, y, tileUpperLevel, beginnerLevelsLayout)
-    // );
     isTileFree(x, y, z, tileUpperLevel);
     removeTile(x, y, tileLevel);
   };
 
   return (
     <div>
-      {beginnerLevelsLayout.map((tilelevel, index1) => {
-        return tilelevel.map((tileRow, index2) => {
+      {beginnerLevelsLayout.map((tilelevel, layoutIndex) => {
+        return tilelevel.map((tileRow, rowIndex) => {
           return (
             <div>
-              {tileRow.map((tile, index3) => {
+              {tileRow.map((tile, columnIndex) => {
                 return (
                   <img
-                    onClick={() => onTileClick(index1, index2, index3)}
+                    onClick={() =>
+                      onTileClick(layoutIndex, rowIndex, columnIndex)
+                    }
                     className={
                       tilelevel === tileLevel1
                         ? "tile-img"

@@ -70,6 +70,14 @@ const removeTile = (x, y, tileLevel) => {
   });
 };
 
+//-----------------Get TileUpperLevel -----------------
+
+const getTileUpperLevel = (z, levelsLayout) => {
+  if (z + 1 > levelsLayout.length - 1) {
+    return null;
+  }
+  return levelsLayout[z + 1];
+};
 //-----------------Check for free tile -----------------
 
 const isTileFree = (x, y, z, tileUpperLevel) => {
@@ -91,4 +99,5 @@ module.exports = {
   getTileBottomRight,
   removeTile,
   isTileFree,
+  getTileUpperLevel,
 };
