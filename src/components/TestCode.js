@@ -3,13 +3,13 @@ import {
   tileLevel1,
   tileLevel2,
   tileLevel3,
-  levelLayout,
+  boardLayout,
 } from "../util/tiles/beginnerTiles";
 // const tileUpperLevel = () => {
-//   if (levelLayout[z + 1] > levelLayout.length - 1) {
+//   if (boardLayout[z + 1] > boardLayout.length - 1) {
 //     return null;
 //   }
-//   return levelLayout[z + 1];
+//   return boardLayout[z + 1];
 // };
 const TestCode = () => {
   return <div>I am TEST</div>;

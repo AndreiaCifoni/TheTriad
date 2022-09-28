@@ -70,11 +70,11 @@ const tileLevel3 = [
   [tile1, tile2, tile3],
 ];
 
-const levelLayout = [tileLevel1, tileLevel2, tileLevel3];
+const boardLayout = [tileLevel1, tileLevel2, tileLevel3];
 
 module.exports = {
   tileLevel1,
   tileLevel2,
   tileLevel3,
-  levelLayout,
+  boardLayout,
 };

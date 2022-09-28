@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   tileLevel1,
   tileLevel2,
   tileLevel3,
-  levelLayout,
+  boardLayout,
 } from "../../util/tiles/beginnerTiles";
 import {
   getTileTopLeft,
@@ -11,26 +11,38 @@ import {
   getTileBottomLeft,
   getTileBottomRight,
   removeTile,
-  isTileFree,
+  getIsTileFree,
   getTileUpperLevel,
 } from "../../util/tileLevelFunctions";
 import "../../style.css";
 
 const Board = () => {
+  const [selectedTile, setSelectedTile] = useState(null);
+
+  const tileSelected = (isTileFree, tileLevel, x, y) => {
+    if (isTileFree) {
+      setSelectedTile(tileLevel[x][y]);
+      return tileLevel[x][y];
+    }
+  };
+
   const onTileClick = (layoutIndex, rowIndex, columnIndex) => {
     const z = layoutIndex;
     const x = rowIndex;
     const y = columnIndex;
-    const tileLevel = levelLayout[z];
-    const tileUpperLevel = getTileUpperLevel(z, levelLayout);
+    const tileLevel = boardLayout[z];
+    const tileUpperLevel = getTileUpperLevel(z, boardLayout);
+    const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
 
-    isTileFree(x, y, z, tileUpperLevel);
+    tileSelected(isTileFree, tileLevel, x, y);
+
     removeTile(x, y, tileLevel);
   };
+  console.log(selectedTile);
 
   return (
     <div>
-      {levelLayout.map((tilelevel, layoutIndex) => {
+      {boardLayout.map((tilelevel, layoutIndex) => {
         return tilelevel.map((tileRow, rowIndex) => {
           return (
             <div>

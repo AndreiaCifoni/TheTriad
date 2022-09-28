@@ -1,5 +1,8 @@
 //-----------------for all Tile Upper Level -----------------
 const getTileTopLeft = (x, y, z, tileUpperLevel) => {
+  if (tileUpperLevel === null) {
+    return null;
+  }
   if ((z + 1) % 2 === 0) {
     return tileUpperLevel[x][y];
   }
@@ -15,6 +18,9 @@ const getTileTopLeft = (x, y, z, tileUpperLevel) => {
 };
 
 const getTileTopRight = (x, y, z, tileUpperLevel) => {
+  if (tileUpperLevel === null) {
+    return null;
+  }
   if ((z + 1) % 2 === 0) {
     if (y + 1 > tileUpperLevel[0].length - 1) {
       return null;
@@ -30,6 +36,9 @@ const getTileTopRight = (x, y, z, tileUpperLevel) => {
 };
 
 const getTileBottomLeft = (x, y, z, tileUpperLevel) => {
+  if (tileUpperLevel === null) {
+    return null;
+  }
   if ((z + 1) % 2 === 0) {
     if (x + 1 > tileUpperLevel.length - 1) {
       return null;
@@ -45,6 +54,9 @@ const getTileBottomLeft = (x, y, z, tileUpperLevel) => {
 };
 
 const getTileBottomRight = (x, y, z, tileUpperLevel) => {
+  if (tileUpperLevel === null) {
+    return null;
+  }
   if ((z + 1) % 2 === 0) {
     if (
       x + 1 > tileUpperLevel.length - 1 ||
@@ -80,7 +92,7 @@ const getTileUpperLevel = (z, levelLayout) => {
 };
 //-----------------Check for free tile -----------------
 
-const isTileFree = (x, y, z, tileUpperLevel) => {
+const getIsTileFree = (x, y, z, tileUpperLevel) => {
   if (
     getTileTopLeft(x, y, z, tileUpperLevel) === null &&
     getTileTopRight(x, y, z, tileUpperLevel) === null &&
@@ -98,6 +110,6 @@ module.exports = {
   getTileBottomLeft,
   getTileBottomRight,
   removeTile,
-  isTileFree,
+  getIsTileFree,
   getTileUpperLevel,
 };
