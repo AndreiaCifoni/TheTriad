@@ -71,11 +71,12 @@ const getTileBottomRight = (x, y, z, tileUpperLevel) => {
 
 //-----------------Remove tile -----------------
 
-const removeTile = (x, y, tileLevel) => {
+const removeTile = (x, y, tileLevel, setGetTileRemoved) => {
   return tileLevel.map((tileRow) => {
     return tileRow.map((tile) => {
       if (tile === tileLevel[x][y]) {
-        return null;
+        //search how to transform content in a object in null
+        return setGetTileRemoved((tile = null));
       }
       return tile;
     });
@@ -90,6 +91,7 @@ const getTileUpperLevel = (z, levelLayout) => {
   }
   return levelLayout[z + 1];
 };
+
 //-----------------Check for free tile -----------------
 
 const getIsTileFree = (x, y, z, tileUpperLevel) => {
@@ -104,6 +106,15 @@ const getIsTileFree = (x, y, z, tileUpperLevel) => {
   return false;
 };
 
+//-----------------Get selected Tile (if it's free) -----------------
+
+const getTileSelected = (isTileFree, tileLevel, x, y, setSelectedTile) => {
+  if (isTileFree) {
+    setSelectedTile(tileLevel[x][y]);
+    return tileLevel[x][y];
+  }
+};
+
 module.exports = {
   getTileTopLeft,
   getTileTopRight,
@@ -112,4 +123,5 @@ module.exports = {
   removeTile,
   getIsTileFree,
   getTileUpperLevel,
+  getTileSelected,
 };
