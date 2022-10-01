@@ -1,0 +1,12 @@
+- App
+  -GamePageNavBar
+  -Game
+    -state: boardLayout([level1, level2]), bottomHolderTiles([])
+    -function(selectTile used by onClick on Tile)
+    -Board
+      -prop: boardLayout, selectTile
+    -BottomHolder
+      -prop: bottomHolderTiles, selectTile
+-Tile (used by Board and BottomHolder)
+  -props: same as the object, selectTile
+  -onClick(calls selectTile )

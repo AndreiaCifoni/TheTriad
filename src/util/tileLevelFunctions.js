@@ -108,9 +108,8 @@ const getIsTileFree = (x, y, z, tileUpperLevel) => {
 
 //-----------------Get selected Tile (if it's free) -----------------
 
-const getTileSelected = (isTileFree, tileLevel, x, y, setSelectedTile) => {
+const getTileSelected = (isTileFree, tileLevel, x, y) => {
   if (isTileFree) {
-    setSelectedTile(tileLevel[x][y]);
     return tileLevel[x][y];
   }
 };

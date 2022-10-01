@@ -18,7 +18,6 @@ import {
 import "../../style.css";
 
 const Board = () => {
-  const [selectedTile, setSelectedTile] = useState(null);
   const [bottomHolder, setBottomHolder] = useState([]);
   const [getTileRemoved, setGetTileRemoved] = useState([]);
 
@@ -29,15 +28,9 @@ const Board = () => {
     const tileLevel = boardLayout[z];
     const tileUpperLevel = getTileUpperLevel(z, boardLayout);
     const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
-    const tileSelected = getTileSelected(
-      isTileFree,
-      tileLevel,
-      x,
-      y,
-      setSelectedTile
-    );
+    const tileSelected = getTileSelected(isTileFree, tileLevel, x, y);
 
-    setBottomHolder(bottomHolder.push(tileSelected));
+    setBottomHolder([bottomHolder.push(tileSelected)]);
 
     removeTile(x, y, tileLevel, setGetTileRemoved);
   };
