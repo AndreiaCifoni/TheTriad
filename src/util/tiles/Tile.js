@@ -1,17 +1,12 @@
 import React from "react";
 
-const Tile = () => {
+const Tile = ({ url, title, layoutIndex, rowIndex, columnIndex }) => {
   const onClickTile = () => {
     console.log("I am Tile");
   };
 
   return (
-    <img
-      onClick={onClickTile}
-      className="tile-img"
-      src="https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg"
-      alt="cherry"
-    />
+    <img onClick={onClickTile} className="tile-img" src={url} alt={title} />
   );
 };
 

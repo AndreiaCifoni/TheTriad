@@ -1,6 +1,31 @@
-/* .body {
-  position: absolute;
+/*
+dark
+#264653
+#2a9d8f
+#e9c46a
+#f4a261
+#e76f51
+medium
+#227c9d
+#17c3b2
+#ffcb77
+#fef9ef 
+#fe6d73
+light
+#ffa69e
+#faf3dd
+#b8f2e6
+#aed9e0
+#5e6472
+ --------------------- */
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* 
 
 .tileLevel2Position {
   position: relative;
@@ -19,3 +44,37 @@
 /* .tile-selected {
   visibility: hidden;
 } */
+
+/* ---------------------GamePageNavBar------------------ */
+
+.game-nav-container {
+  width: 100%vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #17c3b2;
+  color: #264653;
+}
+
+.game-nav-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.game-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+}
+
+.game-nav-item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  background-color: #b8f2e6;
+  color: #264653;
+  border-radius: 0.4rem;
+}
