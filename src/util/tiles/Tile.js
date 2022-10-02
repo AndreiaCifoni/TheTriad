@@ -1,8 +1,9 @@
 import React from "react";
 
-const Tile = ({ url, title, layoutIndex, rowIndex, columnIndex }) => {
+const Tile = ({ url, title, id, layoutIndex, rowIndex, columnIndex }) => {
   const onClickTile = () => {
     console.log("I am Tile");
+    //selectTile()
   };
 
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 
-const BottomBar = () => {
+const BottomHolderBar = () => {
   return <div>I hold 7 tiles</div>;
 };
 
-export default BottomBar;
+export default BottomHolderBar;
