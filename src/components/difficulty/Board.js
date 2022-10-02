@@ -23,13 +23,10 @@ const Board = () => {
   // const [getTileRemoved, setGetTileRemoved] = useState([]);
 
   // const onTileClick = (layoutIndex, rowIndex, columnIndex) => {
-  //   const z = layoutIndex;
-  //   const x = rowIndex;
-  //   const y = columnIndex;
-  //   const tileLevel = boardLayout[z];
+
   //   const tileUpperLevel = getTileUpperLevel(z, boardLayout);
   //   const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
-  //   const tileSelected = getTileSelected(isTileFree, tileLevel, x, y);
+  //   const tileSelected = getTileSelected(isTileFree, tileLevel, x, y);u
 
   //   setBottomHolder([bottomHolder.push(tileSelected)]);
 
@@ -38,8 +35,8 @@ const Board = () => {
 
   return (
     <div>
-      {boardLayout.map((tilelevel, layoutIndex) => {
-        return tilelevel.map((tileRow, rowIndex) => {
+      {boardLayout.map((tileLevel, layoutIndex) => {
+        return tileLevel.map((tileRow, rowIndex) => {
           return (
             <div>
               {tileRow.map((tile, columnIndex) => {
@@ -51,6 +48,7 @@ const Board = () => {
                     layoutIndex={layoutIndex}
                     rowIndex={rowIndex}
                     columnIndex={columnIndex}
+                    tileLevel={tileLevel}
                   />
                 );
               })}
