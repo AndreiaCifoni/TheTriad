@@ -13,31 +13,10 @@ import {
   //getTileSelected,
 } from "../tileLevelFunctions";
 
-const Tile = ({
-  url,
-  title,
-  id,
-  layoutIndex,
-  rowIndex,
-  columnIndex,
-  tileLevel,
-  getTileSelected,
-}) => {
-  const onClickTile = () => {
-    const z = layoutIndex;
-    const x = rowIndex;
-    const y = columnIndex;
-
-    //const tileSelected = getTileSelected(isTileFree, tileLevel, x, y);
-
-    getTileSelected(x, y, z);
-
-    //console.log(tileSelected);
-  };
-
+const Tile = ({ tile, tileLevel, onClick }) => {
   return (
     <img
-      onClick={onClickTile}
+      onClick={onClick || null}
       className={
         tileLevel === tileLevel1
           ? "tile"
@@ -45,8 +24,8 @@ const Tile = ({
           ? "tile tileLevel2-position"
           : "tile tileLevel3-position"
       }
-      src={url}
-      alt={title}
+      src={tile?.url}
+      alt={tile?.title}
     />
   );
 };

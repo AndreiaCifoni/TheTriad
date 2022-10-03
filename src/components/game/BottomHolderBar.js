@@ -1,10 +1,13 @@
 import React from "react";
+import Tile from "../../util/tiles/Tile";
 
-const BottomHolderBar = () => {
+const BottomHolderBar = ({ bottomHolder }) => {
   return (
     <div>
       <div className="bottomHolderBar-container">
-        <h1>THIS WILL HOLD TILES</h1>
+        {bottomHolder.map((tile) => {
+          return <Tile tile={tile} />;
+        })}
       </div>
     </div>
   );

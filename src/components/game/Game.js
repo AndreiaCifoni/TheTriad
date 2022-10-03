@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Board from "../difficulty/Board";
 import BottomHolderBar from "./BottomHolderBar";
 import {
@@ -14,13 +14,21 @@ import {
 
 const Game = () => {
   // const [getLevelUpdated, setGetLevelUpdated] = useState([tileLevel1, tileLevel2, tileLevel3]);
-  //const [bottomHolder, setBottomHolder] = useState([]);
+  const [bottomHolder, setBottomHolder] = useState([]);
+
+  useEffect(() => {
+    console.log(bottomHolder);
+  }, [bottomHolder]);
 
   const getTileSelected = (x, y, z) => {
     const tileUpperLevel = getTileUpperLevel(z, boardLayout);
     const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
+
     if (isTileFree) {
-      // tileHolder(tileLevel, x, y);
+      setBottomHolder((oldBottomHolder) => [
+        ...oldBottomHolder,
+        boardLayout[z][x][y],
+      ]);
     }
   };
 
@@ -31,16 +39,14 @@ const Game = () => {
   //}
 
   // const tileHolder = (tileLevel, x, y) => {
-  //   setBottomHolder([bottomHolder.push(tileLevel[x][y])]);
-  // };
-  // console.log(bottomHolder);
+
   return (
     <div>
       <div>
         <Board getTileSelected={getTileSelected} />
       </div>
       <div>
-        <BottomHolderBar />
+        <BottomHolderBar bottomHolder={bottomHolder} />
       </div>
     </div>
   );

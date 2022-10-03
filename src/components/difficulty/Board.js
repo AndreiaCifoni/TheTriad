@@ -28,14 +28,11 @@ const Board = ({ getTileSelected }) => {
               {tileRow.map((tile, columnIndex) => {
                 return (
                   <Tile
-                    url={tile?.url}
-                    title={tile?.title}
-                    id={tile.id}
-                    layoutIndex={layoutIndex}
-                    rowIndex={rowIndex}
-                    columnIndex={columnIndex}
+                    tile={tile}
                     tileLevel={tileLevel}
-                    getTileSelected={getTileSelected}
+                    onClick={() => {
+                      getTileSelected(rowIndex, columnIndex, layoutIndex);
+                    }}
                   />
                 );
               })}
