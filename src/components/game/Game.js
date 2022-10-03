@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Board from "../difficulty/Board";
 import BottomHolderBar from "./BottomHolderBar";
 import {
@@ -9,7 +9,13 @@ import {
 
 const Game = () => {
   // const [getLevelUpdated, setGetLevelUpdated] = useState([tileLevel1, tileLevel2, tileLevel3]);
-  // const [bottomHolder, setBottomHolder] = useState([]);
+  const [bottomHolder, setBottomHolder] = useState([]);
+
+  const getTileSelected = (isTileFree, tileLevel, x, y) => {
+    if (isTileFree) {
+      tileHolder(tileLevel, x, y);
+    }
+  };
 
   // const levelUpdated = () => {
   // something that map through getLevelUpdated
@@ -17,18 +23,10 @@ const Game = () => {
   // pass this "getLevelUpdated" to board to be mapped in the return
   //}
 
-  //const tileHolded = () => {
-  // it will take the bottomHolder and add the selectedTile,
-  // this will be passed to the component to be added in the return
-  //}
-
-  const getTileSelected = (isTileFree, tileLevel, x, y) => {
-    if (isTileFree) {
-      console.log("coming from child", tileLevel[x][y]);
-      return tileLevel[x][y];
-    }
+  const tileHolder = (tileLevel, x, y) => {
+    setBottomHolder([bottomHolder.push(tileLevel[x][y])]);
   };
-
+  console.log(bottomHolder);
   return (
     <div>
       <div>

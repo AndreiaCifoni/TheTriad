@@ -29,6 +29,7 @@ light
 /* ---------------------GameApp------------------ */
 
 .gameapp-container {
+  padding-bottom: 4rem;
   background-color: #faf3dd;
 }
 
