@@ -18,21 +18,7 @@ import {
 } from "../../util/tileLevelFunctions";
 import "../../style.css";
 
-const Board = () => {
-  // const [bottomHolder, setBottomHolder] = useState([]);
-  // const [getTileRemoved, setGetTileRemoved] = useState([]);
-
-  // const onTileClick = (layoutIndex, rowIndex, columnIndex) => {
-
-  //   const tileUpperLevel = getTileUpperLevel(z, boardLayout);
-  //   const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
-  //   const tileSelected = getTileSelected(isTileFree, tileLevel, x, y);u
-
-  //   setBottomHolder([bottomHolder.push(tileSelected)]);
-
-  //   removeTile(x, y, tileLevel, setGetTileRemoved);
-  // };
-
+const Board = ({ getTileSelected }) => {
   return (
     <div>
       {boardLayout.map((tileLevel, layoutIndex) => {
@@ -49,6 +35,7 @@ const Board = () => {
                     rowIndex={rowIndex}
                     columnIndex={columnIndex}
                     tileLevel={tileLevel}
+                    getTileSelected={getTileSelected}
                   />
                 );
               })}

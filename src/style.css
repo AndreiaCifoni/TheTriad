@@ -28,12 +28,12 @@ light
 
 /* ---------------------Tile------------------ */
 
-.tileLevel2Position {
+.tileLevel2-position {
   position: relative;
   left: 35px;
   /* top: -190px; */
 }
-.tileLevel3Position {
+.tileLevel3-position {
   position: relative;
   /* top: -445px; */
 }
@@ -43,6 +43,7 @@ light
   height: 60px;
   margin: 0.2rem;
   border: 2px solid gray;
+  border-radius: 4px;
 }
 
 /* .tile-selected {

@@ -108,11 +108,11 @@ const getIsTileFree = (x, y, z, tileUpperLevel) => {
 
 //-----------------Get selected Tile (if it's free) -----------------
 
-const getTileSelected = (isTileFree, tileLevel, x, y) => {
-  if (isTileFree) {
-    return tileLevel[x][y];
-  }
-};
+// const getTileSelected = (isTileFree, tileLevel, x, y) => {
+//   if (isTileFree) {
+//     return tileLevel[x][y];
+//   }
+// };
 
 module.exports = {
   getTileTopLeft,
@@ -122,5 +122,5 @@ module.exports = {
   removeTile,
   getIsTileFree,
   getTileUpperLevel,
-  getTileSelected,
+  //getTileSelected,
 };
