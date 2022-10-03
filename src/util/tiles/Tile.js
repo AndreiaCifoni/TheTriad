@@ -27,11 +27,10 @@ const Tile = ({
     const z = layoutIndex;
     const x = rowIndex;
     const y = columnIndex;
-    const tileUpperLevel = getTileUpperLevel(z, boardLayout);
-    const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
+
     //const tileSelected = getTileSelected(isTileFree, tileLevel, x, y);
 
-    getTileSelected(isTileFree, tileLevel, x, y);
+    getTileSelected(x, y, z);
 
     //console.log(tileSelected);
   };
