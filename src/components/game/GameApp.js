@@ -4,7 +4,7 @@ import Game from "./Game";
 
 const GameApp = () => {
   return (
-    <div>
+    <div className="gameapp-container">
       <div>
         <GamePageNavBar />
       </div>

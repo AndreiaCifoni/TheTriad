@@ -13,9 +13,6 @@ const Home = () => {
       <div>
         <Link to={"/gameapp"}>Game App</Link>
       </div>
-      <div>
-        <Tile />
-      </div>
     </div>
   );
 };

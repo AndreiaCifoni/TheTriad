@@ -17,17 +17,4 @@ const TestCode = () => {
 
 export default TestCode;
 
-// <img
-//                     onClick={() =>
-//                       onTileClick(layoutIndex, rowIndex, columnIndex)
-//                     }
-//                     className={
-//                       tilelevel === tileLevel1
-//                         ? "tile-img"
-//                         : tilelevel === tileLevel2
-//                         ? "tile-img tileLevel2Position"
-//                         : "tile-img tileLevel3Position"
-//                     }
-//                     src={tile?.url}
-//                     alt={tile?.title}
-//                   />
+//   setBottomHolder([bottomHolder.push(tileSelected)]);

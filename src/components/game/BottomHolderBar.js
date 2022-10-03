@@ -1,9 +1,13 @@
 import React from "react";
 
 const BottomHolderBar = () => {
-  //   setBottomHolder([bottomHolder.push(tileSelected)]);
-
-  return <div>I hold 7 tiles</div>;
+  return (
+    <div>
+      <div className="bottomHolderBar-container">
+        <h1>THIS WILL HOLD TILES</h1>
+      </div>
+    </div>
+  );
 };
 
 export default BottomHolderBar;

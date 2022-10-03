@@ -26,6 +26,12 @@ light
   position: absolute;
 }
 
+/* ---------------------GameApp------------------ */
+
+.gameapp-container {
+  background-color: #faf3dd;
+}
+
 /* ---------------------Tile------------------ */
 
 .tileLevel2-position {
@@ -41,9 +47,9 @@ light
 .tile {
   width: 60px;
   height: 60px;
-  margin: 0.2rem;
-  border: 2px solid gray;
-  border-radius: 4px;
+  margin: 0.2rem 0.3rem;
+  border: 2px solid #227c9d;
+  border-radius: 0.3rem;
 }
 
 /* .tile-selected {
@@ -52,7 +58,7 @@ light
 
 /* ---------------------GamePageNavBar------------------ */
 
-.game-nav-container {
+.gamePageNav-container {
   width: 100%vw;
   height: 5rem;
   display: flex;
@@ -63,18 +69,18 @@ light
   color: #264653;
 }
 
-.game-nav-title {
+.gamePageNav-title {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.game-nav-list {
+.gamePageNav-list {
   list-style: none;
   display: flex;
   gap: 5rem;
 }
 
-.game-nav-item {
+.gamePageNav-item {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -82,4 +88,16 @@ light
   background-color: #b8f2e6;
   color: #264653;
   border-radius: 0.4rem;
+}
+
+/* ---------------------Board------------------ */
+
+/* ---------------------BottomHolderBar------------------ */
+.bottomHolderBar-container {
+  width: 500px;
+  height: 70px;
+  padding: 4px 15px;
+  margin: 30px auto;
+  border: 2px solid #227c9d;
+  border-radius: 0.3rem;
 }

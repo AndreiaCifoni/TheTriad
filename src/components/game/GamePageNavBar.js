@@ -15,8 +15,8 @@ const GamePageNavBar = () => {
   // };
 
   return (
-    <nav className="game-nav-container">
-      <h1 className="game-nav-title">Match 3</h1>
+    <nav className="gamePageNav-container">
+      <h1 className="gamePageNav-title">Match 3</h1>
       {/* <i onClick={onGameNavIcon}>
         {gameNavClicked ? (
           <XIcon className="nav-icon-icon" />
@@ -24,13 +24,13 @@ const GamePageNavBar = () => {
           <MenuIcon className="nav-icon-icon" />
         )}
       </i> */}
-      <ul className="game-nav-list">
+      <ul className="gamePageNav-list">
         {gamePageNavBar.map((nav) => {
           return (
             <li>
               <Link
                 //onClick={onClickGameNav}
-                className="game-nav-item"
+                className="gamePageNav-item"
                 to={nav.path}
               >
                 {nav.title}
