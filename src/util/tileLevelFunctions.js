@@ -75,7 +75,6 @@ const removeTile = (x, y, tileLevel) => {
   return tileLevel.map((tileRow) => {
     return tileRow.map((tile) => {
       if (tile === tileLevel[x][y]) {
-        //search how to transform content in a object in null
         return null;
       }
       return tile;

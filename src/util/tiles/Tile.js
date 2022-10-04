@@ -7,11 +7,7 @@ import {
   boardLayout,
 } from "./beginnerTiles";
 
-import {
-  getTileUpperLevel,
-  getIsTileFree,
-  //getTileSelected,
-} from "../tileLevelFunctions";
+import { getTileUpperLevel, getIsTileFree } from "../tileLevelFunctions";
 
 const Tile = ({ tile, tileLevel, onClick }) => {
   return (

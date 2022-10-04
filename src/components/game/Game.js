@@ -13,12 +13,12 @@ import {
 } from "../../util/tileLevelFunctions";
 
 const Game = () => {
-  // const [getLevelUpdated, setGetLevelUpdated] = useState([tileLevel1, tileLevel2, tileLevel3]);
+  const [tileLayout, setTileLayout] = useState(boardLayout);
   const [bottomHolder, setBottomHolder] = useState([]);
 
   useEffect(() => {
-    console.log(bottomHolder);
-  }, [bottomHolder]);
+    console.log(bottomHolder, tileLayout);
+  }, [bottomHolder, tileLayout]);
 
   const getTileSelected = (x, y, z) => {
     const tileUpperLevel = getTileUpperLevel(z, boardLayout);
@@ -29,6 +29,19 @@ const Game = () => {
         ...oldBottomHolder,
         boardLayout[z][x][y],
       ]);
+
+      setTileLayout((oldLayout) => {
+        return oldLayout.map((level) => {
+          return level.map((row) => {
+            return row.map((tile) => {
+              if (tile === boardLayout[z][x][y]) {
+                return (tile = null);
+              }
+              return tile;
+            });
+          });
+        });
+      });
     }
   };
 
