@@ -13,13 +13,7 @@ const Tile = ({ tile, tileLevel, onClick }) => {
   return (
     <img
       onClick={onClick || null}
-      className={
-        tileLevel === tileLevel1
-          ? "tile"
-          : tileLevel === tileLevel2
-          ? "tile tileLevel2-position"
-          : "tile tileLevel3-position"
-      }
+      className={tile ? "tile" : "tile-null"}
       src={tile?.url}
       alt={tile?.title}
     />

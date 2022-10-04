@@ -35,15 +35,15 @@ light
 
 /* ---------------------Tile------------------ */
 
-.tileLevel2-position {
+/* .tileLevel2-position {
   position: relative;
   left: 35px;
-  /* top: -190px; */
+   top: -190px; 
 }
 .tileLevel3-position {
   position: relative;
-  /* top: -445px; */
-}
+   top: -445px; 
+} */
 
 .tile {
   width: 60px;
@@ -53,9 +53,13 @@ light
   border-radius: 0.3rem;
 }
 
-/* .tile-selected {
+.tile-null {
+  width: 60px;
+  height: 60px;
+  margin: 0.2rem 0.3rem;
+  border: 2px solid #227c9d;
   visibility: hidden;
-} */
+}
 
 /* ---------------------GamePageNavBar------------------ */
 
