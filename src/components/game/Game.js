@@ -10,27 +10,29 @@ import {
 import {
   getIsTileFree,
   getTileUpperLevel,
+  getTileTopLeft,
 } from "../../util/tileLevelFunctions";
 
 const Game = () => {
-  const [changeTileLayout, setchangeTileLayout] = useState(boardLayout);
+  const [updateTileLayout, setUpdateTileLayout] = useState(boardLayout);
   const [bottomHolder, setBottomHolder] = useState([]);
 
-  useEffect(() => {
-    console.log(bottomHolder, changeTileLayout);
-  }, [bottomHolder, changeTileLayout]);
+  // useEffect(() => {
+  //   console.log(bottomHolder, updateTileLayout);
+  // }, [bottomHolder, updateTileLayout]);
 
   const getTileSelected = (x, y, z) => {
-    const tileUpperLevel = getTileUpperLevel(z, boardLayout);
+    const tileUpperLevel = getTileUpperLevel(z, updateTileLayout);
     const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
-    console.log(isTileFree);
+
+    console.log(getTileTopLeft(x, y, z, tileUpperLevel));
     if (isTileFree) {
       setBottomHolder((oldBottomHolder) => [
         ...oldBottomHolder,
         boardLayout[z][x][y],
       ]);
 
-      setchangeTileLayout((oldLayout) => {
+      setUpdateTileLayout((oldLayout) => {
         return oldLayout.map((level) => {
           return level.map((row) => {
             return row.map((tile) => {
@@ -50,7 +52,7 @@ const Game = () => {
       <div>
         <Board
           getTileSelected={getTileSelected}
-          changeTileLayout={changeTileLayout}
+          updateTileLayout={updateTileLayout}
         />
       </div>
       <div>
