@@ -45,6 +45,7 @@ light
    top: -445px; 
 } */
 
+/*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
 .tile {
   width: 60px;
   height: 60px;
@@ -93,6 +94,12 @@ light
   background-color: #b8f2e6;
   color: #264653;
   border-radius: 0.4rem;
+}
+
+.nav-icon-icon {
+  width: 2.2rem;
+  color: #fff;
+  /* overflow: visible; */
 }
 
 /* ---------------------Board------------------ */
