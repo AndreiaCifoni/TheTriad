@@ -1,13 +1,12 @@
 //-----------------Bottom Tile Holder -----------------
-const arr = [tile1, tile2, tile3, tile1, tile4, tile1, tile2];
 
 const tilesInOrder = (bottomTileHolder) => {
   return bottomTileHolder.sort();
 };
 
-const addTileToBottomHolder = (tile, bottomTileHolder) => {
-  return [...bottomTileHolder, tile];
-};
+// const addTileToBottomHolder = (tile, bottomTileHolder) => {
+//   return [...bottomTileHolder, tile];
+// };
 
 const removeGroupBottomHolder = (sortedBottomTileHolder) => {
   //to do
@@ -21,7 +20,7 @@ const isGameOver = (bottomTileHolder) => {
 
 module.exports = {
   tilesInOrder,
-  addTileToBottomHolder,
+  //addTileToBottomHolder,
   removeGroupBottomHolder,
   isGameOver,
 };

@@ -10,3 +10,10 @@
 -Tile (used by Board and BottomHolder)
   -props: same as the object, selectTile
   -onClick(calls selectTile )
+
+
+
+------------------------------
+to be completed:
+-GamePageNavBar - icon logic
+-Board - alignment of levels

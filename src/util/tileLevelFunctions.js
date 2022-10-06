@@ -71,16 +71,16 @@ const getTileBottomRight = (x, y, z, tileUpperLevel) => {
 
 //-----------------Remove tile -----------------
 
-const removeTile = (x, y, tileLevel) => {
-  return tileLevel.map((tileRow) => {
-    return tileRow.map((tile) => {
-      if (tile === tileLevel[x][y]) {
-        return null;
-      }
-      return tile;
-    });
-  });
-};
+// const removeTile = (x, y, tileLevel) => {
+//   return tileLevel.map((tileRow) => {
+//     return tileRow.map((tile) => {
+//       if (tile === tileLevel[x][y]) {
+//         return null;
+//       }
+//       return tile;
+//     });
+//   });
+// };
 
 //-----------------Get TileUpperLevel -----------------
 
@@ -105,21 +105,12 @@ const getIsTileFree = (x, y, z, tileUpperLevel) => {
   return false;
 };
 
-//-----------------Get selected Tile (if it's free) -----------------
-
-// const getTileSelected = (isTileFree, tileLevel, x, y) => {
-//   if (isTileFree) {
-//     return tileLevel[x][y];
-//   }
-// };
-
 module.exports = {
   getTileTopLeft,
   getTileTopRight,
   getTileBottomLeft,
   getTileBottomRight,
-  removeTile,
+  //removeTile,
   getIsTileFree,
   getTileUpperLevel,
-  //getTileSelected,
 };
