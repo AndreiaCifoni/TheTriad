@@ -8,27 +8,30 @@ import {
 
 const TestCode = () => {
   const abc = [
-    { title: "strawbery", numero: 1 },
-    { title: "orange", numero: 2 },
-    { title: "kiwi", numero: 3 },
-    { title: "strawbery", numero: 1 },
-    { title: "orange", numero: 2 },
-    { title: "kiwi", numero: 3 },
-    { title: "strawbery", numero: 1 },
-    { title: "orange", numero: 2 },
-    { title: "kiwi", numero: 3 },
+    { title: "orange", id: 1 },
+    { title: "orange", id: 2 },
+    { title: "orange", id: 3 },
+    { title: "abacaxi", id: 4 },
+    { title: "morango", id: 5 },
+    { title: "pera", id: 6 },
+    { title: "morango", id: 7 },
+    { title: "abacaxi", id: 8 },
   ];
 
-  const abcde = abc.sort((a, b) => {
-    if (a.title < b.title) {
-      return -1;
+  const removeGroup = (abc) => {
+    let i = 0;
+    while (i < abc.length) {
+      if (abc[i].title === abc[i + 2].title) {
+        abc.splice(i, 1);
+      } else {
+        ++i;
+      }
     }
-    return 1;
-  });
+  };
 
-  console.log(abcde);
+  console.log(removeGroup(abc));
 
-  return <div>{abcde}</div>;
+  return <div>Im test</div>;
 };
 
 export default TestCode;
