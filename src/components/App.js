@@ -4,6 +4,7 @@ import Home from "./Home";
 import Board from "./difficulty/Board";
 import TestCode from "./TestCode";
 import GameApp from "./game/GameApp";
+import WinLoseCard from "./game/WinLoseCard";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path={"/board"} element={<Board />} />
         <Route path={"/test"} element={<TestCode />} />
         <Route path={"/gameapp"} element={<GameApp />} />
+        <Route path={"/winlose"} element={<WinLoseCard />} />
       </Routes>
     </div>
   );

@@ -5,12 +5,14 @@ const Home = () => {
   return (
     <div>
       <h1>HOME</h1>
-      <Link to={"/board"}>Board</Link>
       <div>
         <Link to={"/test"}>TEST</Link>
       </div>
       <div>
         <Link to={"/gameapp"}>Game App</Link>
+      </div>
+      <div>
+        <Link to={"/winlose"}>Win Lose Card</Link>
       </div>
     </div>
   );
