@@ -1,5 +1,4 @@
 import React from "react";
-import Tile from "../util/tiles/Tile";
 import { Link } from "react-router-dom";
 
 const Home = () => {
