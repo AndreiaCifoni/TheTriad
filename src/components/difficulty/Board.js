@@ -20,11 +20,11 @@ import "../../style.css";
 
 const Board = ({ getTileSelected, tileLayout }) => {
   return (
-    <div>
+    <div className="board-container">
       {tileLayout.map((tileLevel, layoutIndex) => {
         return tileLevel.map((tileRow, rowIndex) => {
           return (
-            <div>
+            <div className="tileLevel-container">
               {tileRow.map((tile, columnIndex) => {
                 return (
                   <Tile

@@ -38,11 +38,11 @@ light
 .tileLevel2-position {
   position: relative;
   left: 35px;
-  top: -190px;
+  top: -180px;
 }
 .tileLevel3-position {
   position: relative;
-  top: -445px;
+  top: -422px;
 }
 
 /*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
@@ -103,6 +103,17 @@ light
 }
 
 /* ---------------------Board------------------ */
+
+.board-container {
+  margin: 8rem;
+}
+
+.tileLevel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
 
 /* ---------------------BottomHolderBar------------------ */
 .bottomHolderBar-container {
