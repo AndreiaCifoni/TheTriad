@@ -1,3 +1,5 @@
+import * as R from "ramda";
+
 //-----------------Bottom Tile Holder -----------------
 
 const tilesInOrder = (bottomTileHolder) => {
@@ -8,9 +10,15 @@ const tilesInOrder = (bottomTileHolder) => {
 //   return [...bottomTileHolder, tile];
 // };
 
-const removeGroupBottomHolder = (sortedBottomTileHolder) => {
-  //to do
-  //finds and removes the group of 3 and returns a new tileHolder
+const removeGroupBottomHolder = (bottomHolderSorted) => {
+  const groupedTiles = R.groupWith(
+    (a, b) => a.title === b.title,
+    bottomHolderSorted
+  );
+
+  const filteredTiles = groupedTiles.filter((group) => group.length < 3);
+
+  return filteredTiles.flat();
 };
 
 //should be called after "addTile"... and the "removeGroup"
@@ -18,7 +26,7 @@ const isGameOver = (bottomTileHolder) => {
   return bottomTileHolder.length >= 7;
 };
 
-module.exports = {
+export {
   tilesInOrder,
   //addTileToBottomHolder,
   removeGroupBottomHolder,

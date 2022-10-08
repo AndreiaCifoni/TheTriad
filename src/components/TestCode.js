@@ -20,7 +20,7 @@ const TestCode = () => {
 
   const removeGroup = (abc) => {
     let i = 0;
-    while (i < abc.length) {
+    while (i < abc.length - 2) {
       if (abc[i].title === abc[i + 2].title) {
         abc.splice(i, 1);
       } else {

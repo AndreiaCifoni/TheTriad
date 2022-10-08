@@ -105,7 +105,7 @@ const getIsTileFree = (x, y, z, tileUpperLevel) => {
   return false;
 };
 
-module.exports = {
+export {
   getTileTopLeft,
   getTileTopRight,
   getTileBottomLeft,

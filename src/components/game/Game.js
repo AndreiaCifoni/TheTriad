@@ -12,9 +12,10 @@ import {
   getTileUpperLevel,
   getTileTopLeft,
 } from "../../util/tileLevelFunctions";
+import { removeGroupBottomHolder } from "../../util/bottomHolderFunctions";
 
 const Game = () => {
-  const [updateTileLayout, setUpdateTileLayout] = useState(boardLayout);
+  const [tileLayout, setTileLayout] = useState(boardLayout);
   const [bottomHolder, setBottomHolder] = useState([]);
 
   // useEffect(() => {
@@ -22,22 +23,31 @@ const Game = () => {
   // }, [bottomHolder, updateTileLayout]);
 
   const getTileSelected = (x, y, z) => {
-    const tileUpperLevel = getTileUpperLevel(z, updateTileLayout);
+    const tileUpperLevel = getTileUpperLevel(z, tileLayout);
     const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
 
     console.log(getTileTopLeft(x, y, z, tileUpperLevel));
     if (isTileFree) {
-      setBottomHolder((oldBottomHolder) => [
-        ...oldBottomHolder,
-        boardLayout[z][x][y],
-      ]);
+      setBottomHolder((oldBottomHolder) => {
+        const sortedBottomHolder = [
+          ...oldBottomHolder,
+          boardLayout[z][x][y],
+        ].sort((a, b) => {
+          if (a.title < b.title) {
+            return -1;
+          }
+          return 1;
+        });
 
-      setUpdateTileLayout((oldLayout) => {
+        return removeGroupBottomHolder(sortedBottomHolder);
+      });
+
+      setTileLayout((oldLayout) => {
         return oldLayout.map((level) => {
           return level.map((row) => {
             return row.map((tile) => {
               if (tile === boardLayout[z][x][y]) {
-                return (tile = null);
+                return null;
               }
               return tile;
             });
@@ -50,10 +60,7 @@ const Game = () => {
   return (
     <div>
       <div>
-        <Board
-          getTileSelected={getTileSelected}
-          updateTileLayout={updateTileLayout}
-        />
+        <Board getTileSelected={getTileSelected} tileLayout={tileLayout} />
       </div>
       <div>
         <BottomHolderBar bottomHolder={bottomHolder} />

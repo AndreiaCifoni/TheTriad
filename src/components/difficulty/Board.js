@@ -18,10 +18,10 @@ import {
 } from "../../util/tileLevelFunctions";
 import "../../style.css";
 
-const Board = ({ getTileSelected, updateTileLayout }) => {
+const Board = ({ getTileSelected, tileLayout }) => {
   return (
     <div>
-      {updateTileLayout.map((tileLevel, layoutIndex) => {
+      {tileLayout.map((tileLevel, layoutIndex) => {
         return tileLevel.map((tileRow, rowIndex) => {
           return (
             <div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { gamePageNavBar } from "../../util/gamePageNavBar";
-import { CloudIcon } from "@heroicons/react/24/solid";
+//import { CloudIcon } from "@heroicons/react/24/solid";
 
 const GamePageNavBar = () => {
   const [gameNavClicked, setGameNavClicked] = useState(false);
@@ -17,9 +17,9 @@ const GamePageNavBar = () => {
   return (
     <nav className="gamePageNav-container">
       <h1 className="gamePageNav-title">Match 3</h1>
-      <div>
+      {/* <div>
         <CloudIcon className="nav-icon-icon" />
-      </div>
+      </div> */}
       {/* <div className="nav-icon">
         <i onClick={onGameNavIcon}>
           {gameNavClicked ? (
