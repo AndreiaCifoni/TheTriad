@@ -105,6 +105,7 @@ light
 /* ---------------------Board------------------ */
 
 .board-container {
+  height: 18rem;
   margin: 8rem;
 }
 

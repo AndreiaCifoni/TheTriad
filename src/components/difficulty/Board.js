@@ -1,21 +1,5 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import Tile from "../../util/tiles/Tile";
-import {
-  tileLevel1,
-  tileLevel2,
-  tileLevel3,
-  boardLayout,
-} from "../../util/tiles/beginnerTiles";
-import {
-  getTileTopLeft,
-  getTileTopRight,
-  getTileBottomLeft,
-  getTileBottomRight,
-  removeTile,
-  getIsTileFree,
-  getTileUpperLevel,
-  getTileSelected,
-} from "../../util/tileLevelFunctions";
 import "../../style.css";
 
 const Board = ({ getTileSelected, tileLayout }) => {
@@ -29,7 +13,6 @@ const Board = ({ getTileSelected, tileLayout }) => {
                 return (
                   <Tile
                     tile={tile}
-                    tileLevel={tileLevel}
                     onClick={() => {
                       getTileSelected(rowIndex, columnIndex, layoutIndex);
                     }}

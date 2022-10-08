@@ -16,6 +16,5 @@
 ------------------------------
 to be completed:
 -GamePageNavBar - icon logic
--Board - alignment of levels 
-****AJUSTAR NO BOARD: NAO DA PRA COMPARAR TILELEVEL NA CLASSE POIS O TILELEVEL1,2,3 MUDA QUANDO O TILE VIRA NULL... 
-COMPARAR COM O INDICE Z QUE AI VAI DAR 
+
+

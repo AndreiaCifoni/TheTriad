@@ -119,8 +119,8 @@ const tile20 = {
 };
 
 const tile21 = {
-  title: "strawberry",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
+  title: "cherry",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 21,
 };
 
@@ -137,8 +137,8 @@ const tile23 = {
 };
 
 const tile24 = {
-  title: "strawberry",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
+  title: "cherry",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 24,
 };
 
@@ -155,8 +155,8 @@ const tile26 = {
 };
 
 const tile27 = {
-  title: "strawberry",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
+  title: "cherry",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 27,
 };
 

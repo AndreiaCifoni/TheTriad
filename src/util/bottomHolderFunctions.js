@@ -21,9 +21,10 @@ const removeGroupBottomHolder = (bottomHolderSorted) => {
   return filteredTiles.flat();
 };
 
-//should be called after "addTile"... and the "removeGroup"
 const isGameOver = (bottomTileHolder) => {
-  return bottomTileHolder.length >= 7;
+  if (bottomTileHolder.length >= 7) {
+    return console.log("GAME OVER");
+  }
 };
 
 export {
