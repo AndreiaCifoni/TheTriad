@@ -35,15 +35,15 @@ light
 
 /* ---------------------Tile------------------ */
 
-/* .tileLevel2-position {
+.tileLevel2-position {
   position: relative;
   left: 35px;
-   top: -190px; 
+  top: -190px;
 }
 .tileLevel3-position {
   position: relative;
-   top: -445px; 
-} */
+  top: -445px;
+}
 
 /*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
 .tile {

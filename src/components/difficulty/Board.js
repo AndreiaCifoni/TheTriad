@@ -33,6 +33,15 @@ const Board = ({ getTileSelected, tileLayout }) => {
                     onClick={() => {
                       getTileSelected(rowIndex, columnIndex, layoutIndex);
                     }}
+                    className={
+                      tile
+                        ? layoutIndex === 0
+                          ? "tile"
+                          : layoutIndex === 1
+                          ? "tile tileLevel2-position"
+                          : "tile tileLevel3-position"
+                        : "tile-null"
+                    }
                   />
                 );
               })}

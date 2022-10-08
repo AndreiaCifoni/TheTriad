@@ -26,7 +26,6 @@ const Game = () => {
     const tileUpperLevel = getTileUpperLevel(z, tileLayout);
     const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
 
-    console.log(getTileTopLeft(x, y, z, tileUpperLevel));
     if (isTileFree) {
       setBottomHolder((oldBottomHolder) => {
         const sortedBottomHolder = [

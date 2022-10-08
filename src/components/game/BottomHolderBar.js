@@ -6,7 +6,7 @@ const BottomHolderBar = ({ bottomHolder }) => {
     <div>
       <div className="bottomHolderBar-container">
         {bottomHolder.map((tile) => {
-          return <Tile tile={tile} />;
+          return <Tile tile={tile} className={tile ? "tile" : "tile-null"} />;
         })}
       </div>
     </div>

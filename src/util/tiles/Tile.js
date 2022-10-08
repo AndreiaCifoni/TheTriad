@@ -9,11 +9,11 @@ import {
 
 import { getTileUpperLevel, getIsTileFree } from "../tileLevelFunctions";
 
-const Tile = ({ tile, tileLevel, onClick }) => {
+const Tile = ({ tile, tileLevel, onClick, className }) => {
   return (
     <img
       onClick={onClick || null}
-      className={tile ? "tile" : "tile-null"}
+      className={className}
       src={tile?.url}
       alt={tile?.title}
     />
