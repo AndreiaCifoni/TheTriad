@@ -4,8 +4,8 @@ import "../../style.css";
 
 const WinLoseCard = () => {
   return (
-    <div className="card-container card-winner">
-      <h1 className="card-title">Winner!</h1>
+    <div className="card-container card-gameover">
+      <h1 className="card-title">Game Over</h1>
       <div>
         <Link className="card-btn" to={"/gameapp"}>
           Play Again

@@ -10,6 +10,7 @@ import {
   removeGroupBottomHolder,
   isGameOver,
 } from "../../util/bottomHolderFunctions";
+import WinLoseCard from "./WinLoseCard";
 
 const Game = () => {
   const [tileLayout, setTileLayout] = useState(boardLayout);
@@ -48,15 +49,21 @@ const Game = () => {
       });
     }
   };
-  isGameOver(bottomHolder);
+
   return (
     <div>
-      <div>
-        <Board getTileSelected={getTileSelected} tileLayout={tileLayout} />
-      </div>
-      <div>
-        <BottomHolderBar bottomHolder={bottomHolder} />
-      </div>
+      {isGameOver(bottomHolder) ? (
+        <WinLoseCard />
+      ) : (
+        <div>
+          <div>
+            <Board getTileSelected={getTileSelected} tileLayout={tileLayout} />
+          </div>
+          <div>
+            <BottomHolderBar bottomHolder={bottomHolder} />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

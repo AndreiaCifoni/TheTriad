@@ -21,11 +21,7 @@ const removeGroupBottomHolder = (bottomHolderSorted) => {
   return filteredTiles.flat();
 };
 
-const isGameOver = (bottomTileHolder) => {
-  if (bottomTileHolder.length >= 7) {
-    return console.log("GAME OVER");
-  }
-};
+const isGameOver = (bottomTileHolder) => bottomTileHolder.length >= 7;
 
 export {
   tilesInOrder,
