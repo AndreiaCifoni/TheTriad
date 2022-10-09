@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { gamePageNavBar } from "../../util/gamePageNavBar";
+import "../../style.css";
 //import { CloudIcon } from "@heroicons/react/24/solid";
 
 const GamePageNavBar = () => {

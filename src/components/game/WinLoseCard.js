@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../style.css";
 
 const WinLoseCard = () => {
   return (
-    <div>
-      <h1>Winner!</h1>
+    <div className="card-container card-winner">
+      <h1 className="card-title">Winner!</h1>
       <div>
-        <Link to={"/gameapp"}>Play Again</Link>
+        <Link className="card-btn" to={"/gameapp"}>
+          Play Again
+        </Link>
 
-        <Link to={"/"}>Home</Link>
+        <Link className="card-btn" to={"/"}>
+          Home
+        </Link>
       </div>
     </div>
   );

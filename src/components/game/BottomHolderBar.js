@@ -1,5 +1,6 @@
 import React from "react";
 import Tile from "../../util/tiles/Tile";
+import "../../style.css";
 import { v4 as uuidv4 } from "uuid";
 
 const BottomHolderBar = ({ bottomHolder }) => {

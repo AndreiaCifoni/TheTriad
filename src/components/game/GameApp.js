@@ -1,6 +1,7 @@
 import React from "react";
 import GamePageNavBar from "./GamePageNavBar";
 import Game from "./Game";
+import "../../style.css";
 
 const GameApp = () => {
   return (
