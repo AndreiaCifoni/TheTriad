@@ -9,6 +9,7 @@ import {
 import {
   removeGroupBottomHolder,
   isGameOver,
+  isWinner,
 } from "../../util/bottomHolderFunctions";
 import WinLoseCard from "./WinLoseCard";
 
@@ -56,6 +57,11 @@ const Game = () => {
         <WinLoseCard
           title={"Game Over"}
           className={"card-container card-gameover"}
+        />
+      ) : isWinner(tileLayout, bottomHolder) ? (
+        <WinLoseCard
+          title={"Winner"}
+          className={"card-container card-winner"}
         />
       ) : (
         <div>

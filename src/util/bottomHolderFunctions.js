@@ -16,7 +16,12 @@ const removeGroupBottomHolder = (bottomHolderSorted) => {
 
 const isGameOver = (bottomTileHolder) => bottomTileHolder.length >= 7;
 
-const isWinner = (tileLayout, bottomHolder) =>
-  tileLayout === boardNull && bottomHolder === null;
+const isWinner = (tileLayout, bottomHolder) => {
+  const flattenedTileLayout = tileLayout.flat(3);
+  const isTileNull = flattenedTileLayout.every((tile) => tile === null);
+  console.log(flattenedTileLayout);
+  console.log(isTileNull);
+  return isTileNull && !bottomHolder.length;
+};
 
 export { removeGroupBottomHolder, isGameOver, isWinner };
