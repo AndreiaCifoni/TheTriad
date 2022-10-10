@@ -53,7 +53,10 @@ const Game = () => {
   return (
     <div>
       {isGameOver(bottomHolder) ? (
-        <WinLoseCard />
+        <WinLoseCard
+          title={"Game Over"}
+          className={"card-container card-gameover"}
+        />
       ) : (
         <div>
           <div>

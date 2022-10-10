@@ -1,14 +1,7 @@
 import * as R from "ramda";
+import { boardNull } from "./tiles/beginnerTiles";
 
 //-----------------Bottom Tile Holder -----------------
-
-const tilesInOrder = (bottomTileHolder) => {
-  return bottomTileHolder.sort();
-};
-
-// const addTileToBottomHolder = (tile, bottomTileHolder) => {
-//   return [...bottomTileHolder, tile];
-// };
 
 const removeGroupBottomHolder = (bottomHolderSorted) => {
   const groupedTiles = R.groupWith(
@@ -23,9 +16,7 @@ const removeGroupBottomHolder = (bottomHolderSorted) => {
 
 const isGameOver = (bottomTileHolder) => bottomTileHolder.length >= 7;
 
-export {
-  tilesInOrder,
-  //addTileToBottomHolder,
-  removeGroupBottomHolder,
-  isGameOver,
-};
+const isWinner = (tileLayout, bottomHolder) =>
+  tileLayout === boardNull && bottomHolder === null;
+
+export { removeGroupBottomHolder, isGameOver, isWinner };
