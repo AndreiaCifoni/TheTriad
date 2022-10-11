@@ -3,13 +3,17 @@ import { Link } from "react-router-dom";
 import "../../style.css";
 
 const WinLoseCard = ({ title, className }) => {
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   return (
     <div className={className}>
       <h1 className="card-title">{title}</h1>
       <div>
-        <Link className="card-btn" to={"/gameapp"}>
-          Play Again
-        </Link>
+        <button className="card-btn" onClick={refreshPage}>
+          Play again
+        </button>
 
         <Link className="card-btn" to={"/"}>
           Home
