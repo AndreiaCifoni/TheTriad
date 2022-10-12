@@ -355,7 +355,7 @@ const tile60 = {
   id: 60,
 };
 
-const tileLeve1 = [
+const tileLevel1 = [
   [null, null, tile, tile, tile, tile, tile],
   [tile, null, null, tile, tile, tile, tile],
   [tile, tile, null, null, tile, tile, tile],

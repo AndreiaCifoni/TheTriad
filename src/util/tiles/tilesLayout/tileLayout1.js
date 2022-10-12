@@ -232,22 +232,24 @@ const tile39 = {
   id: 39,
 };
 
-const tileLeve1 = [
-  [tile, tile, tile, tile, tile],
-  [tile, tile, tile, tile, tile],
-  [tile, tile, tile, tile, tile],
-  [tile, tile, tile, tile, tile],
+const tileLevel1 = [
+  [tile7, tile20, tile16, tile11, tile37],
+  [tile1, tile24, tile29, tile34, tile8],
+  [tile28, tile10, tile32, tile39, tile36],
+  [tile19, tile15, tile2, tile12, tile23],
 ];
 
 const tileLevel2 = [
-  [tile, tile, tile, tile],
-  [tile, tile, tile, tile],
-  [tile, tile, tile, tile],
+  [tile3, tile26, tile35, tile6],
+  [tile27, tile33, tile22, tile9],
+  [tile14, tile31, tile4, tile18],
 ];
 
 const tileLevel3 = [
-  [tile, tile, tile, tile],
-  [tile, tile, tile, null],
+  [tile13, tile5, tile17, tile30],
+  [tile38, tile21, tile25, null],
 ];
 
 const boardLayout = [tileLevel1, tileLevel2, tileLevel3];
+
+export { boardLayout };
