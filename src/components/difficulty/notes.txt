@@ -16,5 +16,6 @@
 ------------------------------
 to be completed:
 -GamePageNavBar - icon logic
--WinLoseCard - btn try again
+-Home page -fazer
+-Passar diferentes boards
 
