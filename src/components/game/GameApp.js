@@ -3,14 +3,14 @@ import GamePageNavBar from "./GamePageNavBar";
 import Game from "./Game";
 import "../../style.css";
 
-const GameApp = () => {
+const GameApp = ({ boardLayout }) => {
   return (
     <div className="gameapp-container">
       <div>
         <GamePageNavBar />
       </div>
       <div>
-        <Game />
+        <Game boardLayout={boardLayout} />
       </div>
     </div>
   );

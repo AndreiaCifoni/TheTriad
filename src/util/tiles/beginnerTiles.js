@@ -180,28 +180,4 @@ const tileLevel3 = [
 
 const boardLayout = [tileLevel1, tileLevel2, tileLevel3];
 
-// const empty1 = [
-//   [null, null, null],
-//   [null, null, null],
-//   [null, null, null],
-// ];
-// const empty2 = [
-//   [null, null, null],
-//   [null, null, null],
-//   [null, null, null],
-// ];
-// const empty3 = [
-//   [null, null, null],
-//   [null, null, null],
-//   [null, null, null],
-// ];
-
-// const boardNull = [empty1, empty2, empty3];
-
-module.exports = {
-  tileLevel1,
-  tileLevel2,
-  tileLevel3,
-  boardLayout,
-  // boardNull,
-};
+export { tileLevel1, tileLevel2, tileLevel3, boardLayout };

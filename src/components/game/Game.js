@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Board from "../difficulty/Board";
 import BottomHolderBar from "./BottomHolderBar";
-import { boardLayout } from "../../util/tiles/beginnerTiles";
+//import { boardLayout } from "../../util/tiles/beginnerTiles";
 import {
   getIsTileFree,
   getTileUpperLevel,
@@ -13,7 +13,7 @@ import {
 } from "../../util/bottomHolderFunctions";
 import WinLoseCard from "./WinLoseCard";
 
-const Game = () => {
+const Game = ({ boardLayout }) => {
   const [tileLayout, setTileLayout] = useState(boardLayout);
   const [bottomHolder, setBottomHolder] = useState([]);
 
