@@ -5,6 +5,7 @@ import Board from "./difficulty/Board";
 import TestCode from "./TestCode";
 import GameApp from "./game/GameApp";
 import WinLoseCard from "./game/WinLoseCard";
+import { boardLayout } from "../util/tiles/beginnerTiles";
 import { boardLayout1 } from "../util/tiles/tilesLayout/tileLayout1";
 import { boardLayout2 } from "../util/tiles/tilesLayout/tileLayout2";
 import { boardLayout3 } from "../util/tiles/tilesLayout/tileLayout3";
@@ -16,6 +17,10 @@ const App = () => {
         <Route path={"/"} element={<Home />} />
         <Route path={"/board"} element={<Board />} />
         <Route path={"/test"} element={<TestCode />} />
+        <Route
+          path={"/game-test"}
+          element={<GameApp boardLayout={boardLayout} />}
+        />
         <Route
           path={"/game-begginer"}
           element={<GameApp boardLayout={boardLayout1} />}

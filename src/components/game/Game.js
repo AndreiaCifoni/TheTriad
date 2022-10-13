@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Board from "../difficulty/Board";
 import BottomHolderBar from "./BottomHolderBar";
-//import { boardLayout } from "../../util/tiles/beginnerTiles";
 import {
   getIsTileFree,
   getTileUpperLevel,
