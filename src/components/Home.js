@@ -6,13 +6,13 @@ const Home = () => {
     <div>
       <h1>HOME</h1>
       <div>
-        <Link to={"/test"}>TEST</Link>
+        <Link to={"/gameapp"}>Begginer</Link>
       </div>
       <div>
-        <Link to={"/gameapp"}>Game App</Link>
+        <Link to={"/gameapp"}>Intermeydiate</Link>
       </div>
       <div>
-        <Link to={"/winlose"}>Win Lose Card</Link>
+        <Link to={"/gameapp"}>Expert</Link>
       </div>
     </div>
   );

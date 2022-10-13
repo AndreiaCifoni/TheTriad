@@ -246,10 +246,12 @@ const tileLevel2 = [
 ];
 
 const tileLevel3 = [
-  [tile13, tile5, tile17, tile30],
-  [tile38, tile21, tile25, null],
+  [null, null, null, null, null],
+  [null, tile13, tile5, tile17, null],
+  [null, tile38, tile21, tile25, null],
+  [null, null, tile30, null, null],
 ];
 
-const boardLayout = [tileLevel1, tileLevel2, tileLevel3];
+const boardLayout1 = [tileLevel1, tileLevel2, tileLevel3];
 
-export { boardLayout };
+export { boardLayout1 };

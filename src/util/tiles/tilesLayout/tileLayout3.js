@@ -356,29 +356,31 @@ const tile60 = {
 };
 
 const tileLevel1 = [
-  [null, null, tile, tile, tile, tile, tile],
-  [tile, null, null, tile, tile, tile, tile],
-  [tile, tile, null, null, tile, tile, tile],
-  [tile, tile, tile, null, null, tile, tile],
-  [tile, tile, tile, tile, null, null, tile],
-  [tile, tile, tile, tile, tile, null, null],
+  [null, null, tile1, tile17, tile20, tile6, tile38],
+  [tile24, null, null, tile27, tile59, tile13, tile51],
+  [tile37, tile31, null, null, tile8, tile57, tile54],
+  [tile7, tile41, tile48, null, null, tile23, tile60],
+  [tile16, tile44, tile28, tile53, null, null, tile43],
+  [tile2, tile11, tile36, tile9, tile50, null, null],
 ];
 
 const tileLevel2 = [
-  [null, null, null, tile, tile, tile, tile],
-  [tile, null, null, null, tile, tile, tile],
-  [tile, tile, null, null, null, tile, tile],
-  [tile, tile, tile, null, null, null, tile],
-  [tile, tile, tile, tile, null, null, null],
+  [null, null, null, tile5, tile25, tile19, tile35],
+  [tile56, null, null, null, tile47, tile12, tile55],
+  [tile18, tile22, null, null, null, tile15, tile4],
+  [tile39, tile10, tile34, null, null, null, tile29],
+  [tile3, tile30, tile52, tile32, null, null, null],
 ];
 
 const tileLevel3 = [
   [null, null, null, null, null, null, null],
-  [null, null, null, tile, tile, tile, null],
-  [null, tile, null, null, null, tile, null],
-  [null, tile, null, null, null, tile, null],
-  [null, tile, tile, tile, null, null, null],
+  [null, null, null, tile26, tile46, tile49, null],
+  [null, tile14, null, null, null, tile40, null],
+  [null, tile58, null, null, null, tile42, null],
+  [null, tile33, tile21, tile45, null, null, null],
   [null, null, null, null, null, null, null],
 ];
 
-const boardLayout = [tileLevel1, tileLevel2, tileLevel3];
+const boardLayout3 = [tileLevel1, tileLevel2, tileLevel3];
+
+export { boardLayout3 };
