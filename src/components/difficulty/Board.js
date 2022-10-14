@@ -23,8 +23,8 @@ const Board = ({ getTileSelected, tileLayout }) => {
                         ? layoutIndex === 0
                           ? "tile"
                           : layoutIndex === 1
-                          ? "tile tileLevel2intermediate-position"
-                          : "tile tileLevel3intermediate-position"
+                          ? "tile tileLevel2expert-position"
+                          : "tile tileLevel3expert-position"
                         : "tile-null"
                     }
                   />

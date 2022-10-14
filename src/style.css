@@ -116,6 +116,17 @@ light
   top: -915px;
 }
 
+.tileLevel2expert-position {
+  position: relative;
+  left: 38px;
+  top: -388px;
+}
+
+.tileLevel3expert-position {
+  position: relative;
+  top: -774px;
+}
+
 /*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
 .tile {
   width: 60px;
