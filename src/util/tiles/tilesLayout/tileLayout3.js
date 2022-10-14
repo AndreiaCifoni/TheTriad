@@ -365,11 +365,11 @@ const tileLevel1 = [
 ];
 
 const tileLevel2 = [
-  [null, null, null, tile5, tile25, tile19, tile35],
-  [tile56, null, null, null, tile47, tile12, tile55],
-  [tile18, tile22, null, null, null, tile15, tile4],
-  [tile39, tile10, tile34, null, null, null, tile29],
-  [tile3, tile30, tile52, tile32, null, null, null],
+  [null, null, tile5, tile25, tile19, tile35],
+  [tile56, null, null, tile47, tile12, tile55],
+  [tile18, tile22, null, null, tile15, tile4],
+  [tile39, tile10, tile34, null, null, tile29],
+  [tile3, tile30, tile52, tile32, null, null],
 ];
 
 const tileLevel3 = [
