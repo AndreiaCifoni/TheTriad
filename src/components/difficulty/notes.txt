@@ -16,6 +16,7 @@
 ------------------------------
 to be completed:
 -GamePageNavBar - icon logic
--Home page -fazer
--Passar diferentes boards
+-Boards class to align tiles
+-Better config to make tiles 
+-Random tiles
 
