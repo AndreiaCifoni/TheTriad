@@ -23,8 +23,8 @@ const Board = ({ getTileSelected, tileLayout }) => {
                         ? layoutIndex === 0
                           ? "tile"
                           : layoutIndex === 1
-                          ? "tile tileLevel2-position"
-                          : "tile tileLevel3-position"
+                          ? "tile tileLevel2intermediate-position"
+                          : "tile tileLevel3intermediate-position"
                         : "tile-null"
                     }
                   />
@@ -39,3 +39,13 @@ const Board = ({ getTileSelected, tileLayout }) => {
 };
 
 export default Board;
+
+// className={
+//   tile
+//     ? layoutIndex === 0
+//       ? "tile"
+//       : layoutIndex === 1
+//       ? "tile tileLevel2-position"
+//       : "tile tileLevel3-position"
+//     : "tile-null"
+// }

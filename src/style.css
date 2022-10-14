@@ -96,6 +96,26 @@ light
   top: -422px;
 }
 
+.tileLevel2beginner-position {
+  position: relative;
+  top: -250px;
+}
+
+.tileLevel3beginner-position {
+  position: relative;
+  top: -493px;
+}
+
+.tileLevel2intermediate-position {
+  position: relative;
+  top: -458px;
+}
+
+.tileLevel3intermediate-position {
+  position: relative;
+  top: -915px;
+}
+
 /*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
 .tile {
   width: 60px;

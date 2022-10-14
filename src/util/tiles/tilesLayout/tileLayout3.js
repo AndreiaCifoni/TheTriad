@@ -72,37 +72,37 @@ const tile12 = {
 
 const tile13 = {
   title: "pineapple",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit6_nwnuzd.jpg",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770905/fruits/fruit6_jfni8j.jpg",
   id: 13,
 };
 
 const tile14 = {
   title: "pineapple",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit6_nwnuzd.jpg",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770905/fruits/fruit6_jfni8j.jpg",
   id: 14,
 };
 
 const tile15 = {
   title: "pineapple",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit6_nwnuzd.jpg",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770905/fruits/fruit6_jfni8j.jpg",
   id: 15,
 };
 
 const tile16 = {
   title: "watermelon",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit5_gskfwh.jpg",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770916/fruits/fruit5_sc8yta.jpg",
   id: 16,
 };
 
 const tile17 = {
   title: "watermelon",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit5_gskfwh.jpg",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770916/fruits/fruit5_sc8yta.jpg",
   id: 17,
 };
 
 const tile18 = {
   title: "watermelon",
-  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit5_gskfwh.jpg",
+  url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770916/fruits/fruit5_sc8yta.jpg",
   id: 18,
 };
 

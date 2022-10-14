@@ -55,3 +55,5 @@ const classNameExpert = (tile, layoutIndex) => {
 //       : "tile tileLevel3-position"
 //     : "tile-null"
 // }
+
+export { className, classNameBeginner, classNameIntermediate, classNameExpert };
