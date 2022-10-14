@@ -10,14 +10,14 @@ const className = (tile, layoutIndex) => {
   return "tile-null";
 };
 
-const classNameBegginer = (tile, layoutIndex) => {
+const classNameBeginner = (tile, layoutIndex) => {
   if (tile) {
     if (layoutIndex === 0) {
       return "tile";
     } else if (layoutIndex === 1) {
-      return "tile tileLevel2Begginer-position";
+      return "tile tileLevel2Beginner-position";
     }
-    return "tile tileLevel3Begginer-position";
+    return "tile tileLevel3Beginner-position";
   }
   return "tile-null";
 };

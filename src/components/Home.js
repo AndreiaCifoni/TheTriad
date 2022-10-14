@@ -3,19 +3,21 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
-      <h1>HOME</h1>
-      <div>
-        <Link to={"/game-test"}>Begginer</Link>
-      </div>
-      <div>
-        <Link to={"/game-begginer"}>Begginer</Link>
-      </div>
-      <div>
-        <Link to={"/game-intermediate"}>Intermeydiate</Link>
-      </div>
-      <div>
-        <Link to={"/game-expert"}>Expert</Link>
+    <div className="home-container">
+      <h1 className="home-title">Match Tiles</h1>
+      {/* <div className="home-btn-container">
+        <Link to={"/game-test"}>Beginner</Link>
+      </div> */}
+      <div className="home-btn-container">
+        <div className="home-btn-box">
+          <Link to={"/game-beginner"}>Beginner</Link>
+        </div>
+        <div className="home-btn-box">
+          <Link to={"/game-intermediate"}>Intermediate</Link>
+        </div>
+        <div className="home-btn-box">
+          <Link to={"/game-expert"}>Expert</Link>
+        </div>
       </div>
     </div>
   );

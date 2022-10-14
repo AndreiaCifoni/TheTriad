@@ -22,7 +22,7 @@ const App = () => {
           element={<GameApp boardLayout={boardLayout} />}
         />
         <Route
-          path={"/game-begginer"}
+          path={"/game-beginner"}
           element={<GameApp boardLayout={boardLayout1} />}
         />
         <Route

@@ -26,6 +26,56 @@ light
   position: absolute;
 }
 
+/* ---------------------Home------------------ */
+
+.home-container {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(67, 67, 67, 0.7),
+      rgba(67, 67, 67, 0.7)
+    ),
+    url(https://res.cloudinary.com/deiacifoni/image/upload/v1665709045/fruits/background2_cdk4fs.jpg);
+  background-size: cover;
+}
+
+.home-title {
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  justify-self: center;
+  color: #fef9ef;
+}
+
+.home-btn-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-btn-box {
+  width: 25%;
+  height: 15%;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #264653;
+  border-radius: 0.8rem;
+  background-color: #faf3dd;
+}
+
+.home-btn-box a {
+  text-decoration: none;
+  color: #264653;
+}
+
 /* ---------------------GameApp------------------ */
 
 .gameapp-container {
