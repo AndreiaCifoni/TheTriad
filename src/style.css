@@ -19,11 +19,10 @@ light
 #5e6472
  --------------------- */
 
-.body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  position: absolute;
 }
 
 /* ---------------------Home------------------ */
@@ -44,6 +43,7 @@ light
   font-size: 4rem;
   text-align: center;
   justify-self: center;
+  padding-top: 3rem;
   color: #fef9ef;
 }
 

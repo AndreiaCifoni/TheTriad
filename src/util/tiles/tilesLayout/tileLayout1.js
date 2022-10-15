@@ -1,25 +1,38 @@
-import { banana, kiwi, strawberry, lemon, pear, orange } from "./tilesList";
+import {
+  orange,
+  cherry,
+  kiwi,
+  strawberry,
+  pineapple,
+  watermelon,
+  apple,
+  raspberry,
+  lemon,
+  pear,
+  peach,
+  banana,
+} from "./tilesList";
 import { fixBoardLayout } from "./fixBoardLayout";
 
 const tileLevel1 = [
-  [banana, banana, banana, banana, banana],
-  [banana, kiwi, banana, kiwi, banana],
-  [banana, banana, banana, banana, banana],
-  [banana, banana, kiwi, banana, banana],
+  [orange, kiwi, raspberry, kiwi, apple],
+  [strawberry, peach, pineapple, pear, watermelon],
+  [cherry, apple, orange, lemon, banana],
+  [watermelon, kiwi, pear, banana, strawberry],
 ];
 
 const tileLevel2 = [
-  [strawberry, strawberry, strawberry, strawberry, null],
-  [lemon, strawberry, strawberry, strawberry, null],
-  [strawberry, strawberry, lemon, strawberry, null],
+  [pineapple, lemon, raspberry, kiwi, null],
+  [kiwi, pear, cherry, peach, null],
+  [orange, apple, banana, strawberry, null],
   [null, null, null, null, null],
 ];
 
 const tileLevel3 = [
   [null, null, null, null, null],
-  [null, pear, pear, pear, null],
-  [null, orange, orange, orange, null],
-  [null, null, banana, null, null],
+  [null, pineapple, lemon, raspberry, null],
+  [null, kiwi, watermelon, peach, null],
+  [null, null, cherry, null, null],
 ];
 
 const boardLayout1 = fixBoardLayout([tileLevel1, tileLevel2, tileLevel3]);

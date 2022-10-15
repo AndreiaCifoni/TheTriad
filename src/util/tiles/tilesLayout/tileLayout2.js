@@ -12,6 +12,7 @@ import {
   peach,
   banana,
 } from "./tilesList";
+import { fixBoardLayout } from "./fixBoardLayout";
 
 const tileLevel1 = [
   [watermelon, cherry, pear, null, raspberry, orange, watermelon],
@@ -42,6 +43,6 @@ const tileLevel3 = [
   [null, null, null, null, null, null, null],
 ];
 
-const boardLayout2 = [tileLevel1, tileLevel2, tileLevel3];
+const boardLayout2 = fixBoardLayout([tileLevel1, tileLevel2, tileLevel3]);
 
 export { boardLayout2 };
