@@ -63,7 +63,7 @@ const Game = ({ boardLayout }) => {
           className={"card-container card-winner"}
         />
       ) : (
-        <div>
+        <div className="game-container">
           <div>
             <Board getTileSelected={getTileSelected} tileLayout={tileLayout} />
           </div>

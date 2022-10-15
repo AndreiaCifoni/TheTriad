@@ -77,74 +77,6 @@ light
   color: #264653;
 }
 
-/* ---------------------GameApp------------------ */
-
-.gameapp-container {
-  padding-bottom: 4rem;
-  background-color: #faf3dd;
-}
-
-/* ---------------------Tile------------------ */
-
-.tileLevel2-position {
-  position: relative;
-  left: 35px;
-  top: -180px;
-}
-.tileLevel3-position {
-  position: relative;
-  top: -422px;
-}
-
-.tileLevel2beginner-position {
-  position: relative;
-  top: -250px;
-}
-
-.tileLevel3beginner-position {
-  position: relative;
-  top: -493px;
-}
-
-.tileLevel2intermediate-position {
-  position: relative;
-  top: -458px;
-}
-
-.tileLevel3intermediate-position {
-  position: relative;
-  top: -915px;
-}
-
-.tileLevel2expert-position {
-  position: relative;
-
-  top: -388px;
-}
-
-.tileLevel3expert-position {
-  position: relative;
-  top: -774px;
-}
-
-/*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
-.tile {
-  width: 60px;
-  height: 60px;
-  margin: 0.2rem 0.3rem;
-  border: 2px solid #227c9d;
-  border-radius: 0.3rem;
-  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 4px;
-}
-
-.tile-null {
-  width: 60px;
-  height: 60px;
-  margin: 0.2rem 0.3rem;
-  border: 2px solid #227c9d;
-  visibility: hidden;
-}
-
 /* ---------------------GamePageNavBar------------------ */
 
 .gamePageNav-container {
@@ -185,18 +117,29 @@ light
   /* overflow: visible; */
 }
 
+/* ---------------------GameApp & Game------------------ */
+
+.gameapp-container {
+  height: 100vh;
+
+  background-color: #faf3dd;
+}
+
+.game-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 /* ---------------------Board------------------ */
 
 .board-container {
-  height: 18rem;
-  margin: 8rem;
+  height: 60vh;
+  margin-top: 3rem;
 }
 
-.tileLevel-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
+.board-level {
 }
 
 /* ---------------------BottomHolderBar------------------ */
@@ -207,6 +150,36 @@ light
   margin: 30px auto;
   border: 2px solid #227c9d;
   border-radius: 0.3rem;
+}
+
+/* ---------------------Tile------------------ */
+
+.tileLevel2-position {
+  position: relative;
+  left: 35px;
+  top: -180px;
+}
+.tileLevel3-position {
+  position: relative;
+  top: -422px;
+}
+
+/*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
+.tile {
+  width: 60px;
+  height: 60px;
+  margin: 0.2rem 0.3rem;
+  border: 2px solid #227c9d;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 4px;
+}
+
+.tile-null {
+  width: 60px;
+  height: 60px;
+  margin: 0.2rem 0.3rem;
+  border: 2px solid #227c9d;
+  visibility: hidden;
 }
 
 /* ---------------------Win LOse Card------------------ */
