@@ -16,199 +16,199 @@ const tile3 = {
   id: 3,
 };
 
-const tile4 = {
+const cherry = {
   title: "cherry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 4,
 };
 
-const tile5 = {
+const cherry = {
   title: "cherry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 5,
 };
 
-const tile6 = {
+const cherry = {
   title: "cherry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 6,
 };
 
-const tile7 = {
+const kiwi = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 7,
 };
 
-const tile8 = {
+const kiwi = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 8,
 };
 
-const tile9 = {
+const kiwi = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 9,
 };
 
-const tile10 = {
+const strawberry = {
   title: "strawberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
   id: 10,
 };
 
-const tile11 = {
+const strawberry = {
   title: "strawberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
   id: 11,
 };
 
-const tile12 = {
+const strawberry = {
   title: "strawberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
   id: 12,
 };
 
-const tile13 = {
+const pineapple = {
   title: "pineapple",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770905/fruits/fruit6_jfni8j.jpg",
   id: 13,
 };
 
-const tile14 = {
+const pineapple = {
   title: "pineapple",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770905/fruits/fruit6_jfni8j.jpg",
   id: 14,
 };
 
-const tile15 = {
+const pineapple = {
   title: "pineapple",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770905/fruits/fruit6_jfni8j.jpg",
   id: 15,
 };
 
-const tile16 = {
+const watermelon = {
   title: "watermelon",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770916/fruits/fruit5_sc8yta.jpg",
   id: 16,
 };
 
-const tile17 = {
+const watermelon = {
   title: "watermelon",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770916/fruits/fruit5_sc8yta.jpg",
   id: 17,
 };
 
-const tile18 = {
+const watermelon = {
   title: "watermelon",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1665770916/fruits/fruit5_sc8yta.jpg",
   id: 18,
 };
 
-const tile19 = {
+const apple = {
   title: "apple",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit1_xb2mlb.jpg",
   id: 19,
 };
 
-const tile20 = {
+const apple = {
   title: "apple",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit1_xb2mlb.jpg",
   id: 20,
 };
 
-const tile21 = {
+const apple = {
   title: "apple",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit1_xb2mlb.jpg",
   id: 21,
 };
 
-const tile22 = {
+const raspberry = {
   title: "raspberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit11_rjdaww.jpg",
   id: 22,
 };
 
-const tile23 = {
+const raspberry = {
   title: "raspberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit11_rjdaww.jpg",
   id: 23,
 };
 
-const tile24 = {
+const raspberry = {
   title: "raspberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit11_rjdaww.jpg",
   id: 24,
 };
 
-const tile25 = {
+const lemon = {
   title: "lemon",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit2_tbklqu.jpg",
   id: 25,
 };
 
-const tile26 = {
+const lemon = {
   title: "lemon",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit2_tbklqu.jpg",
   id: 26,
 };
 
-const tile27 = {
+const lemon = {
   title: "lemon",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit2_tbklqu.jpg",
   id: 27,
 };
 
-const tile28 = {
+const pear = {
   title: "pear",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit8_qw7h5e.jpg",
   id: 28,
 };
 
-const tile29 = {
+const pear = {
   title: "pear",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit8_qw7h5e.jpg",
   id: 29,
 };
 
-const tile30 = {
+const pear = {
   title: "pear",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit8_qw7h5e.jpg",
   id: 30,
 };
 
-const tile31 = {
+const peach = {
   title: "peach",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit10_qwjjwp.jpg",
   id: 31,
 };
 
-const tile32 = {
+const peach = {
   title: "peach",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit10_qwjjwp.jpg",
   id: 32,
 };
 
-const tile33 = {
+const peach = {
   title: "peach",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit10_qwjjwp.jpg",
   id: 33,
 };
 
-const tile34 = {
+const banana = {
   title: "banana",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit12_gsax4a.jpg",
   id: 34,
 };
 
-const tile35 = {
+const banana = {
   title: "banana",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit12_gsax4a.jpg",
   id: 35,
 };
 
-const tile36 = {
+const banana = {
   title: "banana",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit12_gsax4a.jpg",
   id: 36,
@@ -356,28 +356,28 @@ const tile60 = {
 };
 
 const tileLevel1 = [
-  [null, null, tile1, tile17, tile20, tile6, tile38],
-  [tile24, null, null, tile27, tile59, tile13, tile51],
-  [tile37, tile31, null, null, tile8, tile57, tile54],
-  [tile7, tile41, tile48, null, null, tile23, tile60],
-  [tile16, tile44, tile28, tile53, null, null, tile43],
-  [tile2, tile11, tile36, tile9, tile50, null, null],
+  [null, null, tile1, watermelon, apple, tile6, tile38],
+  [raspberry, null, null, lemon, tile59, pineapple, tile51],
+  [tile37, peach, null, null, kiwi, tile57, tile54],
+  [kiwi, tile41, tile48, null, null, raspberry, tile60],
+  [watermelon, tile44, pear, tile53, null, null, tile43],
+  [tile2, strawberry, banana, kiwi, tile50, null, null],
 ];
 
 const tileLevel2 = [
-  [null, null, tile5, tile25, tile19, tile35],
-  [tile56, null, null, tile47, tile12, tile55],
-  [tile18, tile22, null, null, tile15, tile4],
-  [tile39, tile10, tile34, null, null, tile29],
-  [tile3, tile30, tile52, tile32, null, null],
+  [null, null, tile5, lemon, apple, banana],
+  [tile56, null, null, tile47, strawberry, tile55],
+  [watermelon, raspberry, null, null, pineapple, tile4],
+  [tile39, strawberry, banana, null, null, pear],
+  [tile3, pear, tile52, peach, null, null],
 ];
 
 const tileLevel3 = [
   [null, null, null, null, null, null, null],
-  [null, null, null, tile26, tile46, tile49, null],
-  [null, tile14, null, null, null, tile40, null],
+  [null, null, null, lemon, tile46, tile49, null],
+  [null, pineapple, null, null, null, tile40, null],
   [null, tile58, null, null, null, tile42, null],
-  [null, tile33, tile21, tile45, null, null, null],
+  [null, peach, apple, tile45, null, null, null],
   [null, null, null, null, null, null, null],
 ];
 

@@ -16,145 +16,145 @@ const tile3 = {
   id: 3,
 };
 
-const tile4 = {
+const cherry = {
   title: "orange",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   id: 4,
 };
 
-const tile5 = {
+const cherry = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 5,
 };
 
-const tile6 = {
+const cherry = {
   title: "strawberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
   id: 6,
 };
 
-const tile7 = {
+const kiwi = {
   title: "orange",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   id: 7,
 };
 
-const tile8 = {
+const kiwi = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 8,
 };
 
-const tile9 = {
+const kiwi = {
   title: "strawberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
   id: 9,
 };
 
-const tile10 = {
+const strawberry = {
   title: "orange",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   id: 10,
 };
 
-const tile11 = {
+const strawberry = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 11,
 };
 
-const tile12 = {
+const strawberry = {
   title: "strawberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
   id: 12,
 };
 
-const tile13 = {
+const pineapple = {
   title: "orange",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   id: 13,
 };
 
-const tile14 = {
+const pineapple = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 14,
 };
 
-const tile15 = {
+const pineapple = {
   title: "strawberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
   id: 15,
 };
 
-const tile16 = {
+const watermelon = {
   title: "orange",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   id: 16,
 };
 
-const tile17 = {
+const watermelon = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 17,
 };
 
-const tile18 = {
+const watermelon = {
   title: "strawberry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843920/fruits/fruit7_sljc7e.jpg",
   id: 18,
 };
 
-const tile19 = {
+const apple = {
   title: "orange",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   id: 19,
 };
 
-const tile20 = {
+const apple = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 20,
 };
 
-const tile21 = {
+const apple = {
   title: "cherry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 21,
 };
 
-const tile22 = {
+const raspberry = {
   title: "orange",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   id: 22,
 };
 
-const tile23 = {
+const raspberry = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 23,
 };
 
-const tile24 = {
+const raspberry = {
   title: "cherry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 24,
 };
 
-const tile25 = {
+const lemon = {
   title: "orange",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1663431780/fruits/fruit9_wqgvcg.jpg",
   id: 25,
 };
 
-const tile26 = {
+const lemon = {
   title: "kiwi",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843922/fruits/fruit3_stcebg.jpg",
   id: 26,
 };
 
-const tile27 = {
+const lemon = {
   title: "cherry",
   url: "https://res.cloudinary.com/deiacifoni/image/upload/v1662843921/fruits/fruit4_xlmd3h.jpg",
   id: 27,
@@ -163,19 +163,19 @@ const tile27 = {
 const tileLevel1 = [
   [tile1, tile2, tile3],
   [tile4, tile5, tile6],
-  [tile8, tile7, tile9],
+  [kiwi, kiwi, kiwi],
 ];
 
 const tileLevel2 = [
-  [tile10, tile15, tile16],
-  [tile11, tile12, tile17],
-  [tile18, tile14, tile13],
+  [strawberry, pineapple, watermelon],
+  [strawberry, strawberry, watermelon],
+  [watermelon, pineapple, pineapple],
 ];
 
 const tileLevel3 = [
-  [tile22, tile26, tile24],
-  [tile19, tile25, tile27],
-  [tile21, tile20, tile23],
+  [raspberry, lemon, raspberry],
+  [apple, lemon, lemon],
+  [apple, apple, raspberry],
 ];
 
 const boardLayout = [tileLevel1, tileLevel2, tileLevel3];
