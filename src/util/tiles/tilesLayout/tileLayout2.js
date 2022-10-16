@@ -31,6 +31,7 @@ const tileLevel2 = [
   [null, null, null, null, null, null],
   [cherry, banana, null, null, strawberry, apple],
   [pineapple, lemon, null, null, orange, banana],
+  [null, null, null, null, null, null],
 ];
 
 const tileLevel3 = [

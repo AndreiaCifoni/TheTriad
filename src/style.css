@@ -120,8 +120,7 @@ light
 /* ---------------------GameApp & Game------------------ */
 
 .gameapp-container {
-  height: 100vh;
-
+  height: 100%;
   background-color: #faf3dd;
 }
 
@@ -142,20 +141,20 @@ light
 }
 
 .board-level1 {
-  grid-row: 1 / 9;
-  grid-column: 1 / 11;
+  grid-row: 1 / 15;
+  grid-column: 1 / 15;
   z-index: 0;
 }
 
 .board-level2 {
-  grid-row: 2 / 10;
-  grid-column: 2 / 12;
+  grid-row: 2 / 16;
+  grid-column: 2 / 16;
   z-index: 5;
 }
 
 .board-level3 {
-  grid-row: 1 / 9;
-  grid-column: 1 / 11;
+  grid-row: 1 / 15;
+  grid-column: 1 / 15;
   z-index: 10;
 }
 
@@ -164,7 +163,7 @@ light
   width: 520px;
   height: 70px;
   padding: 4px 15px;
-  margin: 30px auto;
+  margin: 20px auto 0 auto;
   border: 2px solid #227c9d;
   border-radius: 0.3rem;
 }
