@@ -8,7 +8,15 @@ const Board = ({ getTileSelected, tileLayout }) => {
     <div className="board-container">
       {tileLayout.map((tileLevel, layoutIndex) => {
         return (
-          <div className="board-level">
+          <div
+            className={
+              layoutIndex === 0
+                ? "board-level1"
+                : layoutIndex === 1
+                ? "board-level2"
+                : "board-level3"
+            }
+          >
             {tileLevel.map((tileRow, rowIndex) => {
               return (
                 <div key={uuidv4()}>
@@ -20,15 +28,7 @@ const Board = ({ getTileSelected, tileLayout }) => {
                         onClick={() => {
                           getTileSelected(rowIndex, columnIndex, layoutIndex);
                         }}
-                        className={
-                          tile
-                            ? layoutIndex === 0
-                              ? "tile"
-                              : layoutIndex === 1
-                              ? "tile tileLevel2-position"
-                              : "tile tileLevel3-position"
-                            : "tile-null"
-                        }
+                        className={tile ? "tile" : "tile-null"}
                       />
                     );
                   })}

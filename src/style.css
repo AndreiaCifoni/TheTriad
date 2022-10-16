@@ -137,9 +137,26 @@ light
 .board-container {
   height: 60vh;
   margin-top: 3rem;
+  display: grid;
+  justify-content: center;
 }
 
-.board-level {
+.board-level1 {
+  grid-row: 1 / 9;
+  grid-column: 1 / 11;
+  z-index: 0;
+}
+
+.board-level2 {
+  grid-row: 2 / 10;
+  grid-column: 2 / 12;
+  z-index: 5;
+}
+
+.board-level3 {
+  grid-row: 1 / 9;
+  grid-column: 1 / 11;
+  z-index: 10;
 }
 
 /* ---------------------BottomHolderBar------------------ */
