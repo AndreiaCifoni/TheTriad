@@ -143,19 +143,24 @@ light
 .board-level1 {
   grid-row: 1 / 15;
   grid-column: 1 / 15;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .board-level2 {
   grid-row: 2 / 16;
   grid-column: 2 / 16;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 .board-level3 {
   grid-row: 1 / 15;
   grid-column: 1 / 15;
-  z-index: 10;
+  /* z-index: 10; */
+  /* pointer-events: none; */
+}
+
+.click-through {
+  pointer-events: none;
 }
 
 /* ---------------------BottomHolderBar------------------ */
@@ -188,6 +193,7 @@ light
   border: 2px solid #227c9d;
   border-radius: 0.3rem;
   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 4px;
+  pointer-events: auto;
 }
 
 .tile-null {
@@ -196,6 +202,7 @@ light
   margin: 0.2rem 0.3rem;
   border: 2px solid #227c9d;
   visibility: hidden;
+  pointer-events: none;
 }
 
 /* ---------------------Win LOse Card------------------ */

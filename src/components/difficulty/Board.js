@@ -11,10 +11,10 @@ const Board = ({ getTileSelected, tileLayout }) => {
           <div
             className={
               layoutIndex === 0
-                ? "board-level1"
+                ? "board-level1 click-through"
                 : layoutIndex === 1
-                ? "board-level2"
-                : "board-level3"
+                ? "board-level2 click-through"
+                : "board-level3 click-through"
             }
           >
             {tileLevel.map((tileRow, rowIndex) => {
