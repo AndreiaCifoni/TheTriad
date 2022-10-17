@@ -184,7 +184,7 @@ light
   position: relative;
   top: -422px;
 }
-
+/*change the size of tiles (media query) to 5vw */
 /*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
 .tile {
   width: 60px;

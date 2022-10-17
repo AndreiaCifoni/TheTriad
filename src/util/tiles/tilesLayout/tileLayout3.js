@@ -24,11 +24,12 @@ const tileLevel1 = [
 ];
 
 const tileLevel2 = [
-  [null, null, cherry, lemon, apple, banana],
-  [peach, null, null, apple, strawberry, peach],
-  [watermelon, raspberry, null, null, pineapple, cherry],
-  [kiwi, strawberry, banana, null, null, pear],
-  [orange, pear, lemon, peach, null, null],
+  [null, null, cherry, lemon, apple, banana, null],
+  [peach, null, null, apple, strawberry, peach, null],
+  [watermelon, raspberry, null, null, pineapple, cherry, null],
+  [kiwi, strawberry, banana, null, null, pear, null],
+  [orange, pear, lemon, peach, null, null, null],
+  [null, null, null, null, null, null, null],
 ];
 
 const tileLevel3 = [
