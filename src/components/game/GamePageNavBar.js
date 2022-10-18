@@ -10,9 +10,9 @@ const GamePageNavBar = () => {
     window.location.reload();
   };
 
-  // const onClickGameNav = () => {
-  //   setGameNavClicked(!gameNavClicked);
-  // };
+  const onClickGameNav = () => {
+    setGameNavClicked(!gameNavClicked);
+  };
 
   const onGameNavIcon = () => {
     setGameNavClicked(!gameNavClicked);
@@ -31,7 +31,13 @@ const GamePageNavBar = () => {
           )}
         </i>
       </div>
-      <div className="gamePageNav-items">
+      <div
+        className={
+          gameNavClicked
+            ? "gamePageNav-items gamePageNav-items-cell"
+            : "gamePageNav-items"
+        }
+      >
         <button className="gamePageNav-item" onClick={refreshPage}>
           Restart
         </button>

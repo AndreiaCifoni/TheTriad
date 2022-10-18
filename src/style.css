@@ -114,7 +114,33 @@ light
 .gamePageNav-icon {
   width: 2.2rem;
   color: #faf3dd;
-  /* overflow: visible; */
+  visibility: hidden;
+}
+
+@media screen and (max-width: 650px) {
+  .gamePageNav-icon {
+    visibility: visible;
+    position: relative;
+    left: 250px;
+  }
+
+  .gamePageNav-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 83px;
+    right: 600px;
+    gap: 0;
+    transform: all 0.5s ease;
+  }
+
+  .gamePageNav-items-cell {
+    position: relative;
+    top: 83px;
+    left: 20px;
+    gap: 0;
+    transform: all 0.5s ease;
+  }
 }
 
 /* ---------------------GameApp & Game------------------ */
