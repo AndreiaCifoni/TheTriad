@@ -95,8 +95,7 @@ light
   font-weight: bold;
 }
 
-.gamePageNav-list {
-  list-style: none;
+.gamePageNav-items {
   display: flex;
   gap: 5rem;
 }
@@ -109,11 +108,12 @@ light
   background-color: #b8f2e6;
   color: #264653;
   border-radius: 0.4rem;
+  border: none;
 }
 
-.nav-icon-icon {
+.gamePageNav-icon {
   width: 2.2rem;
-  color: #fff;
+  color: #faf3dd;
   /* overflow: visible; */
 }
 

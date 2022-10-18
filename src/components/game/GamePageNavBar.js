@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { gamePageNavBar } from "../../util/gamePageNavBar";
 import "../../style.css";
-//import { CloudIcon } from "@heroicons/react/24/solid";
+import { XIcon, MenuIcon } from "@heroicons/react/solid";
 
 const GamePageNavBar = () => {
   const [gameNavClicked, setGameNavClicked] = useState(false);
 
-  const onClickGameNav = () => {
-    setGameNavClicked(!gameNavClicked);
+  const refreshPage = () => {
+    window.location.reload();
   };
+
+  // const onClickGameNav = () => {
+  //   setGameNavClicked(!gameNavClicked);
+  // };
 
   const onGameNavIcon = () => {
     setGameNavClicked(!gameNavClicked);
@@ -18,33 +21,24 @@ const GamePageNavBar = () => {
   return (
     <nav className="gamePageNav-container">
       <h1 className="gamePageNav-title">Match 3</h1>
-      {/* <div>
-        <CloudIcon className="nav-icon-icon" />
-      </div> */}
-      {/* <div className="nav-icon">
+
+      <div className="gamePageNav-icon-container">
         <i onClick={onGameNavIcon}>
           {gameNavClicked ? (
-            <XIcon className="nav-icon-icon" />
+            <XIcon className="gamePageNav-icon" />
           ) : (
-            <MenuIcon className="nav-icon-icon" />
+            <MenuIcon className="gamePageNav-icon" />
           )}
         </i>
-      </div> */}
-      <ul className="gamePageNav-list">
-        {gamePageNavBar.map((nav, index) => {
-          return (
-            <li key={index}>
-              <Link
-                onClick={onClickGameNav}
-                className="gamePageNav-item"
-                to={nav.path}
-              >
-                {nav.title}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      </div>
+      <div className="gamePageNav-items">
+        <button className="gamePageNav-item" onClick={refreshPage}>
+          Restart
+        </button>
+        <Link className="gamePageNav-item" to="/">
+          Home
+        </Link>
+      </div>
     </nav>
   );
 };
