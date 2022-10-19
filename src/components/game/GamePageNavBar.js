@@ -20,7 +20,7 @@ const GamePageNavBar = () => {
 
   return (
     <nav className="gamePageNav-container">
-      <h1 className="gamePageNav-title">Match 3</h1>
+      <h1 className="gamePageNav-title">The Triad</h1>
 
       <div className="gamePageNav-icon-container">
         <i onClick={onGameNavIcon}>
