@@ -29,6 +29,7 @@ light
 /* ---------------------Home------------------ */
 
 .home-container {
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(
       to right bottom,
@@ -76,6 +77,39 @@ light
 .home-btn-box a {
   text-decoration: none;
   color: #264653;
+}
+
+@media screen and (max-width: 1120px) {
+  .home-title {
+    font-size: 3.8rem;
+  }
+
+  .home-btn-box {
+    width: 35%;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .home-title {
+    font-size: 3.2rem;
+  }
+
+  .home-btn-box {
+    width: 45%;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-btn-box {
+    width: 55%;
+    font-size: 1.6rem;
+  }
 }
 
 /* ---------------------GamePageNavBar------------------ */
