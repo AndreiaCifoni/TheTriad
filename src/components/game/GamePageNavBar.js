@@ -21,29 +21,30 @@ const GamePageNavBar = () => {
   return (
     <nav className="gamePageNav-container">
       <h1 className="gamePageNav-title">The Triad</h1>
-
-      <div className="gamePageNav-icon-container">
-        <i onClick={onGameNavIcon}>
-          {gameNavClicked ? (
-            <XIcon className="gamePageNav-icon" />
-          ) : (
-            <MenuIcon className="gamePageNav-icon" />
-          )}
-        </i>
-      </div>
-      <div
-        className={
-          gameNavClicked
-            ? "gamePageNav-items gamePageNav-items-cell"
-            : "gamePageNav-items"
-        }
-      >
-        <button className="gamePageNav-item" onClick={refreshPage}>
-          Restart
-        </button>
-        <Link className="gamePageNav-item" to="/">
-          Home
-        </Link>
+      <div className="gamePageNav-menu-container">
+        <div className="gamePageNav-icon-container">
+          <i onClick={onGameNavIcon}>
+            {gameNavClicked ? (
+              <XIcon className="gamePageNav-icon" />
+            ) : (
+              <MenuIcon className="gamePageNav-icon" />
+            )}
+          </i>
+        </div>
+        <div
+          className={
+            gameNavClicked
+              ? "gamePageNav-items gamePageNav-items-cell"
+              : "gamePageNav-items"
+          }
+        >
+          <button className="gamePageNav-item" onClick={refreshPage}>
+            Restart
+          </button>
+          <Link className="gamePageNav-item" to="/">
+            Home
+          </Link>
+        </div>
       </div>
     </nav>
   );

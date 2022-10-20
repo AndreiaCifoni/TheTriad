@@ -115,7 +115,7 @@ light
 /* ---------------------GamePageNavBar------------------ */
 
 .gamePageNav-container {
-  width: 100%vw;
+  width: 100%;
   height: 5rem;
   display: flex;
   justify-content: space-between;
@@ -123,6 +123,11 @@ light
   padding: 1rem 3rem;
   background-color: #17c3b2;
   color: #264653;
+}
+
+.gamePageNav-menu-container {
+  display: flex;
+  align-items: center;
 }
 
 .gamePageNav-title {
@@ -153,10 +158,17 @@ light
 }
 
 @media screen and (max-width: 650px) {
+  .gamePageNav-icon-container {
+    position: relative;
+    left: 6rem;
+  }
+
+  .gamePageNav-title {
+    font-size: 1.8rem;
+  }
+
   .gamePageNav-icon {
     visibility: visible;
-    position: relative;
-    left: 250px;
   }
 
   .gamePageNav-items {
@@ -181,12 +193,13 @@ light
 /* ---------------------GameApp & Game------------------ */
 
 .gameapp-container {
+  width: 100%;
   height: 100%;
   background-color: #faf3dd;
 }
 
 .game-container {
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
