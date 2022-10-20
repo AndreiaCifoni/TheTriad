@@ -186,16 +186,15 @@ light
 }
 
 .game-container {
-  height: 90vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 /* ---------------------Board------------------ */
 
 .board-container {
-  height: 60vh;
+  height: 50%;
   margin-top: 3rem;
   display: grid;
   justify-content: center;
@@ -232,6 +231,8 @@ light
   margin: 20px auto 0 auto;
   border: 2px solid #227c9d;
   border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
 }
 
 /* ---------------------Tile------------------ */
@@ -264,6 +265,25 @@ light
   border: 2px solid #227c9d;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (max-width: 770px) {
+  .tile {
+    width: 8vw;
+    height: 8vw;
+    margin: 0.2rem 0.2rem;
+  }
+
+  .tile-null {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .bottomHolderBar-container {
+    width: 65vw;
+    height: 10vw;
+    padding: 4px 2px;
+  }
 }
 
 /* ---------------------Win LOse Card------------------ */
