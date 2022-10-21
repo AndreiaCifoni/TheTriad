@@ -5,9 +5,7 @@ import {
   strawberry,
   pineapple,
   watermelon,
-  apple,
   raspberry,
-  lemon,
   pear,
   peach,
   banana,
@@ -16,29 +14,29 @@ import { fixBoardLayout } from "./fixBoardLayout";
 
 const tileLevel1 = [
   [watermelon, cherry, pear, null, raspberry, orange, watermelon],
-  [orange, orange, apple, null, cherry, strawberry, raspberry],
-  [raspberry, kiwi, raspberry, null, pineapple, apple, lemon],
+  [orange, orange, strawberry, null, cherry, strawberry, raspberry],
+  [raspberry, kiwi, raspberry, null, pineapple, strawberry, kiwi],
   [null, null, null, null, null, null, null],
-  [pear, apple, peach, null, orange, kiwi, lemon],
-  [lemon, lemon, lemon, null, banana, kiwi, raspberry],
-  [strawberry, pineapple, cherry, null, kiwi, apple, peach],
+  [pear, strawberry, peach, null, orange, kiwi, kiwi],
+  [kiwi, banana, kiwi, null, banana, kiwi, raspberry],
+  [strawberry, pineapple, cherry, null, kiwi, strawberry, peach],
 ];
 
 const tileLevel2 = [
-  [kiwi, apple, null, null, kiwi, peach],
-  [pear, cherry, null, null, peach, peach],
-  [null, null, null, null, null, null],
-  [null, null, null, null, null, null],
-  [cherry, banana, null, null, strawberry, apple],
-  [pineapple, lemon, null, null, orange, banana],
-  [null, null, null, null, null, null],
+  [kiwi, strawberry, null, null, kiwi, raspberry, null],
+  [pear, cherry, null, null, pineapple, peach, null],
+  [null, null, null, null, null, null, null],
+  [null, null, null, null, null, null, null],
+  [cherry, banana, null, null, strawberry, strawberry, null],
+  [peach, kiwi, null, null, orange, kiwi, null],
+  [null, null, null, null, null, null, null],
 ];
 
 const tileLevel3 = [
   [null, null, null, null, null, null, null],
   [null, cherry, null, null, null, peach, null],
   [null, null, null, null, null, null, null],
-  [null, null, null, raspberry, null, null, null],
+  [null, null, null, peach, null, null, null],
   [null, null, null, null, null, null, null],
   [null, watermelon, null, null, null, orange, null],
   [null, null, null, null, null, null, null],

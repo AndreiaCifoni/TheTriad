@@ -15,8 +15,7 @@
 
 ------------------------------
 to be completed:
--GamePageNavBar - icon logic
--Boards class to align tiles
--Better config to make tiles 
+-More boards for each difficulty
+-Rules btn!!!
 -Random tiles
 
