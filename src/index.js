@@ -6,7 +6,7 @@ import App from "./components/App";
 const root = createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );

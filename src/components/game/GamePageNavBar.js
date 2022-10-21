@@ -7,7 +7,7 @@ const GamePageNavBar = () => {
   const [gameNavClicked, setGameNavClicked] = useState(false);
 
   const refreshPage = () => {
-    history.go(0);
+    window.location.reload();
   };
 
   // const onClickGameNav = () => {
