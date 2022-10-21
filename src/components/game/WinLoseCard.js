@@ -4,7 +4,7 @@ import "../../style.css";
 
 const WinLoseCard = ({ title, className }) => {
   const refreshPage = () => {
-    window.location.reload();
+    history.go(0);
   };
 
   return (
