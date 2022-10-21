@@ -51,7 +51,7 @@ const Game = ({ boardLayout }) => {
   };
 
   return (
-    <div>
+    <div className="game-container">
       {isGameOver(bottomHolder) ? (
         <WinLoseCard
           title={"Game Over"}
@@ -63,7 +63,7 @@ const Game = ({ boardLayout }) => {
           className={"card-container card-winner"}
         />
       ) : (
-        <div className="game-container">
+        <div>
           <div>
             <Board getTileSelected={getTileSelected} tileLayout={tileLayout} />
           </div>

@@ -259,7 +259,7 @@ light
   position: relative;
   top: -422px;
 }
-/*change the size of tiles (media query) to 5vw */
+
 /*try something  overflow: hidden; to adjust tile (sobreposto ta mostrando o de baixo)*/
 .tile {
   width: 60px;
@@ -302,16 +302,17 @@ light
 /* ---------------------Win LOse Card------------------ */
 
 .card-container {
-  width: 20rem;
-  height: 10rem;
+  width: 28rem;
+  height: 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
   margin: 10rem auto;
   color: #264653;
-  border: 2px solid #227c9d;
+  border: 3px solid #227c9d;
   border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 4px;
 }
 
 .card-winner {
@@ -331,10 +332,11 @@ light
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 0.5rem;
+  padding: 0.6rem;
   margin: 1rem 1.8rem;
   color: #227c9d;
   background-color: #faf3dd;
-  border: 1px solid #227c9d;
+  border: 2px solid #227c9d;
   border-radius: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 4px;
 }
