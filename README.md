@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# The Triad
+For all the puzzle lovers, The Triad is a version of the phone app Zen Match whitch is inspired in the famous Mahjong. 
+In this modern version the tiles are disposed in a board, and when clicked they will be holded in the bottom bar. But be careful! The bar can only hold "safely" 6 tiles, in the 7th tile the game is over! When 3 similar tiles are selected they vanish from the bar, releasing the space. Once the board and the bottom bar are clean, you'll win the game!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About the project
 
-In the project directory, you can run:
+    
+### Built with
+This application was buit with:
 
-### `npm start`
+* JavaScript
+* React
+* CSS
+* HTML
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Getting Started
+The project is already deployed in the link below:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
+In the Home page you can find three sections to choose between different difficulties. From the beginner to expert, the boards change in the shape and variety of tiles to be matched.
 
-### `npm run build`
+****photo Home Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Each board has a nav bar with a Restart button to start the game all over and a Home button to come back to the Home page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+****photo board with game going on
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+When the game is lost, you can either Restart or come back to the Home to change the level of difficulty.
+And when the tiles are cleaned from the board, a new board is open for play.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact
+Andreia Cifoni - andreiacifoni@gmail.com
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Acknowledgments
+Helpful resources used during the constructions of the page:
+- 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
