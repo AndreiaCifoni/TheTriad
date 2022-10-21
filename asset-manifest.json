@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TheTriad/static/css/main.751fe260.css",
+    "main.js": "/TheTriad/static/js/main.7fb76768.js",
+    "index.html": "/TheTriad/index.html",
+    "main.751fe260.css.map": "/TheTriad/static/css/main.751fe260.css.map",
+    "main.7fb76768.js.map": "/TheTriad/static/js/main.7fb76768.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.751fe260.css",
+    "static/js/main.7fb76768.js"
+  ]
+}
