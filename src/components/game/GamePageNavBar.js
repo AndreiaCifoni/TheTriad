@@ -10,9 +10,9 @@ const GamePageNavBar = () => {
     window.location.reload();
   };
 
-  const onClickGameNav = () => {
-    setGameNavClicked(!gameNavClicked);
-  };
+  // const onClickGameNav = () => {
+  //   setGameNavClicked(!gameNavClicked);
+  // };
 
   const onGameNavIcon = () => {
     setGameNavClicked(!gameNavClicked);
