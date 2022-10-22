@@ -112,6 +112,43 @@ light
   }
 }
 
+/* ---------------------Footer------------------ */
+
+.footer-container {
+  padding: 0.6rem 0;
+  background-color: #669fa8;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #264653;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-title {
+  font-weight: bold;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+}
+
+.footer-social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.footer-link {
+  color: #264653;
+}
+
+.footer-social-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
 /* ---------------------GamePageNavBar------------------ */
 
 .gamePageNav-container {
