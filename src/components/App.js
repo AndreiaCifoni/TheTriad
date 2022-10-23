@@ -7,7 +7,7 @@ import GameApp from "./game/GameApp";
 import WinLoseCard from "./game/WinLoseCard";
 import { boardLayout } from "../util/tiles/beginnerTiles";
 import { boardLayoutBeginner3 } from "../util/tiles/tilesLayout/tileLayoutBeginner3";
-import { boardLayoutIntermediate1 } from "../util/tiles/tilesLayout/tileLayoutIntermediate1";
+import { boardLayoutIntermediate3 } from "../util/tiles/tilesLayout/tileLayoutIntermediate3";
 import { boardLayoutExpert1 } from "../util/tiles/tilesLayout/tileLayoutExpert1";
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
         />
         <Route
           path={"/game-intermediate"}
-          element={<GameApp boardLayout={boardLayoutIntermediate1} />}
+          element={<GameApp boardLayout={boardLayoutIntermediate3} />}
         />
         <Route
           path={"/game-expert"}

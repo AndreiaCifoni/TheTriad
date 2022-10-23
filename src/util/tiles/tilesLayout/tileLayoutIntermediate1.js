@@ -6,25 +6,24 @@ import {
   pineapple,
   watermelon,
   raspberry,
-  pear,
   peach,
   banana,
 } from "./tilesList";
 import { fixBoardLayout } from "./fixBoardLayout";
 
 const tileLevel1 = [
-  [watermelon, cherry, pear, null, raspberry, orange, watermelon],
+  [watermelon, cherry, banana, null, raspberry, orange, watermelon],
   [orange, orange, strawberry, null, cherry, strawberry, raspberry],
   [raspberry, kiwi, raspberry, null, pineapple, strawberry, kiwi],
   [null, null, null, null, null, null, null],
-  [pear, strawberry, peach, null, orange, kiwi, kiwi],
+  [banana, strawberry, peach, null, orange, kiwi, kiwi],
   [kiwi, banana, kiwi, null, banana, kiwi, raspberry],
   [strawberry, pineapple, cherry, null, kiwi, strawberry, peach],
 ];
 
 const tileLevel2 = [
   [kiwi, strawberry, null, null, kiwi, raspberry, null],
-  [pear, cherry, null, null, pineapple, peach, null],
+  [banana, cherry, null, null, pineapple, peach, null],
   [null, null, null, null, null, null, null],
   [null, null, null, null, null, null, null],
   [cherry, banana, null, null, strawberry, strawberry, null],
