@@ -2,33 +2,36 @@ import { orange, cherry, kiwi, strawberry, peach } from "./tilesList";
 import { fixBoardLayout } from "./fixBoardLayout";
 
 const tileLevel1 = [
-  [orange, cherry, peach, strawberry, cherry, orange],
-  [peach, strawberry, orange, kiwi, cherry, peach],
-  [cherry, kiwi, cherry, peach, orange, peach],
-  [cherry, orange, strawberry, cherry, orange, kiwi],
-  [strawberry, peach, kiwi, orange, peach, strawberry],
+  [kiwi, strawberry, orange, strawberry, kiwi, orange],
+  [orange, kiwi, cherry, strawberry, peach, cherry],
+  [null, null, null, null, null, null],
+  [null, null, null, null, null, null],
+  [cherry, strawberry, peach, orange, kiwi, peach],
+  [orange, kiwi, peach, cherry, strawberry, cherry],
 ];
 
 const tileLevel2 = [
-  [kiwi, peach, orange, strawberry, cherry, null],
-  [strawberry, cherry, orange, kiwi, cherry, null],
-  [orange, strawberry, kiwi, peach, strawberry, null],
-  [cherry, orange, peach, kiwi, orange, null],
+  [peach, orange, strawberry, orange, cherry, null],
+  [strawberry, cherry, peach, kiwi, peach, null],
+  [null, null, null, null, null, null],
+  [peach, orange, strawberry, cherry, kiwi, null],
+  [kiwi, cherry, kiwi, orange, peach, null],
   [null, null, null, null, null, null],
 ];
 
 const tileLevel3 = [
   [null, null, null, null, null, null],
-  [null, cherry, peach, strawberry, orange, null],
-  [null, kiwi, strawberry, cherry, kiwi, null],
-  [null, orange, cherry, peach, kiwi, null],
-  [null, cherry, kiwi, strawberry, orange, null],
+  [null, orange, strawberry, cherry, strawberry, null],
+  [null, peach, cherry, kiwi, peach, null],
+  [null, strawberry, orange, peach, kiwi, null],
+  [null, kiwi, cherry, strawberry, orange, null],
+  [null, null, null, null, null, null],
 ];
 
-const boardLayoutBeginner1 = fixBoardLayout([
+const boardLayoutBeginner2 = fixBoardLayout([
   tileLevel1,
   tileLevel2,
   tileLevel3,
 ]);
 
-export { boardLayoutBeginner1 };
+export { boardLayoutBeginner2 };
