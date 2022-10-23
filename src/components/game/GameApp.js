@@ -2,6 +2,7 @@ import React from "react";
 import GamePageNavBar from "./GamePageNavBar";
 import Game from "./Game";
 import "../../style.css";
+import Footer from "../Footer";
 
 const GameApp = ({ boardLayout }) => {
   return (
@@ -12,6 +13,7 @@ const GameApp = ({ boardLayout }) => {
       <div>
         <Game boardLayout={boardLayout} />
       </div>
+      <Footer />
     </div>
   );
 };
