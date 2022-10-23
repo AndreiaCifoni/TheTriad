@@ -42,6 +42,10 @@ const tileLevel3 = [
   [null, null, null, null, null, null, null],
 ];
 
-const boardLayout2 = fixBoardLayout([tileLevel1, tileLevel2, tileLevel3]);
+const boardLayoutIntermediate1 = fixBoardLayout([
+  tileLevel1,
+  tileLevel2,
+  tileLevel3,
+]);
 
-export { boardLayout2 };
+export { boardLayoutIntermediate1 };

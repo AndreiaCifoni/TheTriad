@@ -6,9 +6,9 @@ import TestCode from "./TestCode";
 import GameApp from "./game/GameApp";
 import WinLoseCard from "./game/WinLoseCard";
 import { boardLayout } from "../util/tiles/beginnerTiles";
-import { boardLayout1 } from "../util/tiles/tilesLayout/tileLayout1";
-import { boardLayout2 } from "../util/tiles/tilesLayout/tileLayout2";
-import { boardLayout3 } from "../util/tiles/tilesLayout/tileLayout3";
+import { boardLayoutBeginner1 } from "../util/tiles/tilesLayout/tileLayoutBeginner1";
+import { boardLayoutIntermediate1 } from "../util/tiles/tilesLayout/tileLayoutIntermediate1";
+import { boardLayoutExpert1 } from "../util/tiles/tilesLayout/tileLayoutExpert1";
 
 const App = () => {
   return (
@@ -22,15 +22,15 @@ const App = () => {
         />
         <Route
           path={"/game-beginner"}
-          element={<GameApp boardLayout={boardLayout1} />}
+          element={<GameApp boardLayout={boardLayoutBeginner1} />}
         />
         <Route
           path={"/game-intermediate"}
-          element={<GameApp boardLayout={boardLayout2} />}
+          element={<GameApp boardLayout={boardLayoutIntermediate1} />}
         />
         <Route
           path={"/game-expert"}
-          element={<GameApp boardLayout={boardLayout3} />}
+          element={<GameApp boardLayout={boardLayoutExpert1} />}
         />
         <Route path={"/winlose"} element={<WinLoseCard />} />
         <Route exact path={"/"} element={<Home />} />
