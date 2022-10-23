@@ -12,7 +12,7 @@ import { boardLayout3 } from "../util/tiles/tilesLayout/tileLayout3";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Routes>
         <Route path={"/board"} element={<Board />} />
         <Route path={"/test"} element={<TestCode />} />

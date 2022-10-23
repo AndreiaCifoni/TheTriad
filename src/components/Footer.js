@@ -7,7 +7,10 @@ const Footer = () => {
       <p className="footer-text">Created by Andreia Cifoni</p>
       <ul className="footer-social-links">
         <li>
-          <a className="footer-link" href="#">
+          <a
+            className="footer-link"
+            href="mailto:andreiacifoni@gmail.com?subject='subject text'"
+          >
             <ion-icon
               className="footer-social-icon"
               name="mail-outline"
@@ -15,7 +18,10 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a className="footer-link" href="www.linkedin.com/in/andreiacifoni">
+          <a
+            className="footer-link"
+            href="https://linkedin.com/in/andreiacifoni"
+          >
             <ion-icon
               className="footer-social-icon"
               name="logo-linkedin"
