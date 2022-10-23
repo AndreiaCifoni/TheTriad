@@ -159,6 +159,46 @@ light
   height: 1.8rem;
 }
 
+@media screen and (max-width: 1120px) {
+  .footer-social-links {
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footer-title {
+    font-size: 1.6rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .footer-social-links {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer-container {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .footer-social-links {
+    gap: 1.5rem;
+  }
+}
+
 /* ---------------------GamePageNavBar------------------ */
 
 .gamePageNav-container {
