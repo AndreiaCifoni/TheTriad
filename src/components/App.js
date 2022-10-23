@@ -6,7 +6,7 @@ import TestCode from "./TestCode";
 import GameApp from "./game/GameApp";
 import WinLoseCard from "./game/WinLoseCard";
 import { boardLayout } from "../util/tiles/beginnerTiles";
-import { boardLayoutBeginner2 } from "../util/tiles/tilesLayout/tileLayoutBeginner2";
+import { boardLayoutBeginner3 } from "../util/tiles/tilesLayout/tileLayoutBeginner3";
 import { boardLayoutIntermediate1 } from "../util/tiles/tilesLayout/tileLayoutIntermediate1";
 import { boardLayoutExpert1 } from "../util/tiles/tilesLayout/tileLayoutExpert1";
 
@@ -22,7 +22,7 @@ const App = () => {
         />
         <Route
           path={"/game-beginner"}
-          element={<GameApp boardLayout={boardLayoutBeginner2} />}
+          element={<GameApp boardLayout={boardLayoutBeginner3} />}
         />
         <Route
           path={"/game-intermediate"}
