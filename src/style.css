@@ -31,6 +31,10 @@ light
   height: 100vh;
 } */
 
+body {
+  background-color: #faf3dd;
+}
+
 /* ---------------------Home------------------ */
 
 .home-container {
@@ -142,6 +146,7 @@ light
 }
 
 .footer-social-links {
+  font-size: 1.8rem;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -155,13 +160,12 @@ light
 
 .footer-social-icon {
   display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
 }
 
 @media screen and (max-width: 1120px) {
   .footer-social-links {
     gap: 4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -177,6 +181,7 @@ light
 
   .footer-social-links {
     gap: 3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -196,6 +201,7 @@ light
 
   .footer-social-links {
     gap: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -281,7 +287,7 @@ light
 
 .gameapp-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #faf3dd;
   display: flex;
   flex-direction: column;
@@ -289,10 +295,8 @@ light
 }
 
 .game-container {
-  height: 90vh;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
 }
 
 /* ---------------------Board------------------ */
@@ -337,6 +341,7 @@ light
   border-radius: 0.3rem;
   display: flex;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 /* ---------------------Tile------------------ */
