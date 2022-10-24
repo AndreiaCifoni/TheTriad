@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import "../../style.css";
 import { XIcon, MenuIcon } from "@heroicons/react/solid";
 
-const GamePageNavBar = () => {
+const GamePageNavBar = ({ resetGame }) => {
   const [gameNavClicked, setGameNavClicked] = useState(false);
 
-  const refreshPage = () => {
-    window.location.reload();
-  };
+  // const refreshPage = () => {
+  //   window.location.reload();
+  // };
 
   const onGameNavIcon = () => {
     setGameNavClicked(!gameNavClicked);
@@ -34,7 +34,7 @@ const GamePageNavBar = () => {
               : "gamePageNav-items"
           }
         >
-          <button className="gamePageNav-item" onClick={refreshPage}>
+          <button className="gamePageNav-item" onClick={resetGame}>
             Restart
           </button>
           <Link className="gamePageNav-item" to="/">

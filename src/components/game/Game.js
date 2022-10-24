@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Board from "../difficulty/Board";
 import BottomHolderBar from "./BottomHolderBar";
 import {
@@ -12,10 +12,13 @@ import {
 } from "../../util/bottomHolderFunctions";
 import WinLoseCard from "./WinLoseCard";
 
-const Game = ({ boardLayout }) => {
-  const [tileLayout, setTileLayout] = useState(boardLayout);
-  const [bottomHolder, setBottomHolder] = useState([]);
-
+const Game = ({
+  boardLayout,
+  tileLayout,
+  setTileLayout,
+  bottomHolder,
+  setBottomHolder,
+}) => {
   const getTileSelected = (x, y, z) => {
     const tileUpperLevel = getTileUpperLevel(z, tileLayout);
     const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
