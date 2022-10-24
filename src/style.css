@@ -355,7 +355,7 @@ light
 .tile {
   width: 60px;
   height: 60px;
-  margin: 0.2rem 0.3rem;
+  margin: 0.1rem 0.2rem;
   border: 2px solid #227c9d;
   border-radius: 0.3rem;
   box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 4px;
@@ -365,7 +365,7 @@ light
 .tile-null {
   width: 60px;
   height: 60px;
-  margin: 0.2rem 0.3rem;
+  margin: 0.1rem 0.2rem;
   border: 2px solid #227c9d;
   visibility: hidden;
   pointer-events: none;
@@ -375,12 +375,13 @@ light
   .tile {
     width: 8vw;
     height: 8vw;
-    margin: 0.2rem 0.2rem;
+    margin: 0 0.1rem;
   }
 
   .tile-null {
     width: 8vw;
     height: 8vw;
+    margin: 0 0.1rem;
   }
 
   .bottomHolderBar-container {
