@@ -311,8 +311,8 @@ light
 }
 
 .board-level2 {
-  grid-row: 4 / 16;
-  grid-column: 4 / 16;
+  grid-row: 2 / 16;
+  grid-column: 2 / 16;
   /* z-index: 5; */
 }
 
