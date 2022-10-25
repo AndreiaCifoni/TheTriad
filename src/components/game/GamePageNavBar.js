@@ -6,9 +6,9 @@ import { XIcon, MenuIcon } from "@heroicons/react/solid";
 const GamePageNavBar = ({ resetGame }) => {
   const [gameNavClicked, setGameNavClicked] = useState(false);
 
-  // const refreshPage = () => {
-  //   window.location.reload();
-  // };
+  const refreshPage = () => {
+    window.location.reload();
+  };
 
   const onGameNavIcon = () => {
     setGameNavClicked(!gameNavClicked);
@@ -34,6 +34,9 @@ const GamePageNavBar = ({ resetGame }) => {
               : "gamePageNav-items"
           }
         >
+          <button className="gamePageNav-item" onClick={refreshPage}>
+            New Board
+          </button>
           <button className="gamePageNav-item" onClick={resetGame}>
             Restart
           </button>

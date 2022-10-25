@@ -230,7 +230,7 @@ body {
 
 .gamePageNav-items {
   display: flex;
-  gap: 5rem;
+  gap: 1.5rem;
 }
 
 .gamePageNav-item {
@@ -250,7 +250,7 @@ body {
   visibility: hidden;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .gamePageNav-icon-container {
     position: relative;
     left: 6rem;
@@ -269,17 +269,22 @@ body {
     flex-direction: column;
     position: relative;
     top: 83px;
-    right: 600px;
+    right: 750px;
     gap: 0;
     transform: all 0.5s ease;
   }
 
+  .gamePageNav-item {
+    font-size: 1.2rem;
+  }
+
   .gamePageNav-items-cell {
     position: relative;
-    top: 83px;
+    top: 99px;
     left: 20px;
     gap: 0;
     transform: all 0.5s ease;
+    border-radius: 0;
   }
 }
 
