@@ -52,10 +52,26 @@ body {
   justify-content: space-between;
 }
 
+.home-rules-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #faf3dd;
+  background-color: #227c9d;
+  border: 2px solid #264653;
+  border-radius: 0.3rem;
+  width: 6rem;
+  padding: 0.6rem 1rem;
+  margin: 4rem 8rem 0 auto;
+}
+
+.home-rules-btn:hover {
+  background-color: #2a9d8f;
+}
+
 .home-rules {
-  /* position: relative;
-  right: 500px; */
-  /* visibility: hidden; */
+  position: relative;
+  /* right: 500px; */
+  display: none;
 }
 
 .home-title {
@@ -63,7 +79,7 @@ body {
   font-size: 4rem;
   text-align: center;
   justify-self: center;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   color: #fef9ef;
 }
 
@@ -98,6 +114,13 @@ body {
 }
 
 @media screen and (max-width: 1120px) {
+  .home-rules-btn {
+    font-size: 1rem;
+    width: 5rem;
+    padding: 0.4rem 0.8rem;
+    margin: 4rem 6rem 0 auto;
+  }
+
   .home-title {
     font-size: 3.8rem;
   }
@@ -109,6 +132,11 @@ body {
 }
 
 @media screen and (max-width: 770px) {
+  .home-rules-btn {
+    font-size: 0.8rem;
+    margin: 3rem 2.5rem 0 auto;
+  }
+
   .home-title {
     font-size: 3.2rem;
   }
@@ -120,6 +148,11 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .home-rules-btn {
+    font-size: 0.8rem;
+    margin: 2rem 2rem 0 auto;
+  }
+
   .home-title {
     font-size: 3rem;
   }

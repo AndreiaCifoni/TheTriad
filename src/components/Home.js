@@ -6,10 +6,10 @@ import Rules from "./Rules";
 const Home = () => {
   return (
     <div className="home-container">
-      {/* <button className="home-btn">Rules</button>
+      <button className="home-rules-btn">Rules</button>
       <div className="home-rules">
         <Rules />
-      </div> */}
+      </div>
       <h1 className="home-title">The Triad</h1>
 
       <div className="home-btn-container">
