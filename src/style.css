@@ -64,8 +64,18 @@ body {
   margin: 4rem 8rem 0 auto;
 }
 
-.home-rules-btn:hover {
-  background-color: #2a9d8f;
+.home-rules-icon {
+  color: #faf3dd;
+  background-color: #227c9d;
+  border: 2px solid #264653;
+  border-radius: 0.3rem;
+  width: 6rem;
+  padding: 0.32rem 1rem;
+  margin: 4rem 8rem 0 auto;
+}
+
+.home-icon {
+  width: 1.8rem;
 }
 
 .home-rules {
@@ -121,6 +131,16 @@ body {
     margin: 4rem 6rem 0 auto;
   }
 
+  .home-rules-icon {
+    width: 5rem;
+    padding: 0.2rem 0.8rem;
+    margin: 4rem 6rem 0 auto;
+  }
+
+  .home-icon {
+    width: 1.4rem;
+  }
+
   .home-title {
     font-size: 3.8rem;
   }
@@ -137,6 +157,14 @@ body {
     margin: 3rem 2.5rem 0 auto;
   }
 
+  .home-rules-icon {
+    margin: 3rem 2.5rem 0 auto;
+  }
+
+  .home-icon {
+    width: 1.15rem;
+  }
+
   .home-title {
     font-size: 3.2rem;
   }
@@ -149,7 +177,10 @@ body {
 
 @media screen and (max-width: 500px) {
   .home-rules-btn {
-    font-size: 0.8rem;
+    margin: 2rem 2rem 0 auto;
+  }
+
+  .home-rules-icon {
     margin: 2rem 2rem 0 auto;
   }
 
