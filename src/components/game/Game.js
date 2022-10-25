@@ -1,5 +1,5 @@
 import React from "react";
-import Board from "../difficulty/Board";
+import Board from "./Board";
 import BottomHolderBar from "./BottomHolderBar";
 import {
   getIsTileFree,

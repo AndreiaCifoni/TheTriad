@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Board from "./difficulty/Board";
+import Board from "./game/Board";
 import TestCode from "./TestCode";
 import GameApp from "./game/GameApp";
 import WinLoseCard from "./game/WinLoseCard";
@@ -15,6 +15,7 @@ import { boardLayoutIntermediate3 } from "../util/tiles/tilesLayout/tileLayoutIn
 import { boardLayoutExpert1 } from "../util/tiles/tilesLayout/tileLayoutExpert1";
 import { boardLayoutExpert2 } from "../util/tiles/tilesLayout/tileLayoutExpert2";
 import { boardLayoutExpert3 } from "../util/tiles/tilesLayout/tileLayoutExpert3";
+import Rules from "./Rules";
 
 const App = () => {
   const beginnerBoards = [
@@ -42,6 +43,7 @@ const App = () => {
       <Routes>
         <Route path={"/board"} element={<Board />} />
         <Route path={"/test"} element={<TestCode />} />
+        <Route path={"/rules"} element={<Rules />} />
         <Route
           path={"/game-test"}
           element={<GameApp boardLayout={boardLayout} />}
