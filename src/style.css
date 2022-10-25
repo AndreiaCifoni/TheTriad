@@ -52,18 +52,24 @@ body {
   justify-content: space-between;
 }
 
+.home-rules {
+  /* position: relative;
+  right: 500px; */
+  /* visibility: hidden; */
+}
+
 .home-title {
   width: 100%;
   font-size: 4rem;
   text-align: center;
   justify-self: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
   color: #fef9ef;
 }
 
 .home-btn-container {
   width: 100%;
-  height: 70%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,6 +128,29 @@ body {
     width: 55%;
     font-size: 1.6rem;
   }
+}
+
+/* ---------------------Rules------------------ */
+.rules-container {
+  width: 22rem;
+  color: #264653;
+  padding: 1rem;
+  border: 2px solid #227c9d;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.rules-title {
+  font-size: 1.6rem;
+}
+
+.rules-subtitle {
+  font-size: 1.2rem;
+  color: #227c9d;
+}
+
+.rules-text {
+  font-size: 0.9rem;
+  margin: 0.5rem;
 }
 
 /* ---------------------Footer------------------ */

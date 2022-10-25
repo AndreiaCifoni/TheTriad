@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <h1 className="footer-title">The triad</h1>
+      <h1 className="footer-title">The Triad</h1>
       <p className="footer-text">Created by Andreia Cifoni</p>
       <ul className="footer-social-links">
         <li>
