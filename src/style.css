@@ -73,17 +73,6 @@ body {
   width: 1.8rem;
 }
 
-.home-rules {
-  position: absolute;
-  left: 27vw;
-  top: 17.5vh;
-  margin-right: 8rem;
-}
-
-.home-rules-none {
-  display: none;
-}
-
 .home-title {
   width: 100%;
   font-size: 4rem;
@@ -196,12 +185,22 @@ body {
 
 /* ---------------------Rules------------------ */
 .rules-container {
-  width: 40rem;
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   color: #264653;
-  padding: 1rem;
+  padding: 2rem;
   border: 2px solid #227c9d;
   border-radius: 0.5rem;
   background-color: #faf3dd;
+}
+
+.rules-none {
+  display: none;
 }
 
 .rules-title {
@@ -219,13 +218,9 @@ body {
 }
 
 @media screen and (max-width: 1120px) {
-  .home-rules {
-    left: 28vw;
-    top: 15.5vh;
-  }
-
   .rules-container {
-    width: 28rem;
+    top: 6rem;
+    padding: 1.8rem;
   }
 
   .rules-title {
@@ -242,36 +237,18 @@ body {
 }
 
 @media screen and (max-width: 770px) {
-  .home-rules {
-    left: 25vw;
-    top: 12.5vh;
-  }
-
   .rules-container {
-    width: 22rem;
+    top: 6rem;
+    padding: 1rem;
+    width: 65%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .home-rules {
-    left: 18vw;
-    top: 10vh;
-  }
-
   .rules-container {
-    width: 19rem;
-  }
-
-  .rules-title {
-    font-size: 1.2rem;
-  }
-
-  .rules-subtitle {
-    font-size: 0.8rem;
-  }
-
-  .rules-text {
-    font-size: 0.7rem;
+    top: 6rem;
+    padding: 1rem;
+    width: 80%;
   }
 }
 
