@@ -372,13 +372,24 @@ body {
   border: none;
 }
 
+.gamePageNav-rules-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-self: center;
+  padding: 0.3rem 0.8rem;
+  background-color: #b8f2e6;
+  color: #264653;
+  border-radius: 0.4rem;
+  border: none;
+}
+
 .gamePageNav-icon {
   width: 2.2rem;
   color: #faf3dd;
   visibility: hidden;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 860px) {
   .gamePageNav-icon-container {
     position: relative;
     left: 6rem;
@@ -392,14 +403,8 @@ body {
     visibility: visible;
   }
 
-  .gamePageNav-items {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 83px;
-    right: 750px;
-    gap: 0;
-    transform: all 0.5s ease;
+  .gamePageNav-rules-icon {
+    width: 10rem;
   }
 
   .gamePageNav-item {
@@ -408,11 +413,13 @@ body {
 
   .gamePageNav-items-cell {
     position: relative;
+    flex-direction: column;
     top: 99px;
     left: 20px;
     gap: 0;
     transform: all 0.5s ease;
     border-radius: 0;
+    width: 10rem;
   }
 }
 

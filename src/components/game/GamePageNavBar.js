@@ -6,11 +6,11 @@ import Rules from "../Rules";
 
 const GamePageNavBar = ({ resetGame }) => {
   const [gameNavClicked, setGameNavClicked] = useState(false);
-  // const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
-  // const onToggle = () => {
-  //   setToggle(!toggle);
-  // };
+  const onToggle = () => {
+    setToggle(!toggle);
+  };
 
   const refreshPage = () => {
     window.location.reload();
@@ -40,17 +40,15 @@ const GamePageNavBar = ({ resetGame }) => {
               : "gamePageNav-items"
           }
         >
-          {/* <button className="gamePageNav-item" onClick={onToggle}>
-            Rules
-          </button>
-
-          <div
-            className={
-              toggle ? "home-rules rules-container" : "home-rules-none"
-            }
+          <button
+            className={toggle ? "gamePageNav-rules-icon" : "gamePageNav-item"}
+            onClick={onToggle}
           >
+            {toggle ? <XIcon className="home-icon" /> : "Rules"}
+          </button>
+          <div className={toggle ? " rules-container" : "rules-none"}>
             <Rules />
-          </div> */}
+          </div>
           <button className="gamePageNav-item" onClick={refreshPage}>
             New Board
           </button>

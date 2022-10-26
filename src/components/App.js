@@ -2,10 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Board from "./game/Board";
-import TestCode from "./TestCode";
 import GameApp from "./game/GameApp";
 import WinLoseCard from "./game/WinLoseCard";
-import { boardLayout } from "../util/tiles/beginnerTiles";
 import { boardLayoutBeginner1 } from "../util/tiles/tilesLayout/tileLayoutBeginner1";
 import { boardLayoutBeginner2 } from "../util/tiles/tilesLayout/tileLayoutBeginner2";
 import { boardLayoutBeginner3 } from "../util/tiles/tilesLayout/tileLayoutBeginner3";
@@ -42,12 +40,7 @@ const App = () => {
     <div className="app-container">
       <Routes>
         <Route path={"/board"} element={<Board />} />
-        <Route path={"/test"} element={<TestCode />} />
         <Route path={"/rules"} element={<Rules />} />
-        <Route
-          path={"/game-test"}
-          element={<GameApp boardLayout={boardLayout} />}
-        />
         <Route
           path={"/game-beginner"}
           element={<GameApp boardLayout={beginnerBoards[newBoard]} />}
