@@ -19,7 +19,9 @@ const Home = () => {
       >
         {toggle ? <XIcon className="home-icon" /> : "Rules"}
       </button>
-      <div className="home-rules">
+      <div
+        className={toggle ? "home-rules rules-container" : "home-rules-none"}
+      >
         <Rules />
       </div>
       <h1 className="home-title">The Triad</h1>
