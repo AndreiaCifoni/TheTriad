@@ -6,11 +6,11 @@ import Rules from "../Rules";
 
 const GamePageNavBar = ({ resetGame }) => {
   const [gameNavClicked, setGameNavClicked] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
-  const onToggle = () => {
-    setToggle(!toggle);
-  };
+  // const onToggle = () => {
+  //   setToggle(!toggle);
+  // };
 
   const refreshPage = () => {
     window.location.reload();
@@ -40,7 +40,7 @@ const GamePageNavBar = ({ resetGame }) => {
               : "gamePageNav-items"
           }
         >
-          <button className="gamePageNav-item" onClick={onToggle}>
+          {/* <button className="gamePageNav-item" onClick={onToggle}>
             Rules
           </button>
 
@@ -50,7 +50,7 @@ const GamePageNavBar = ({ resetGame }) => {
             }
           >
             <Rules />
-          </div>
+          </div> */}
           <button className="gamePageNav-item" onClick={refreshPage}>
             New Board
           </button>
