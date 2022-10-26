@@ -23,6 +23,15 @@ const GamePageNavBar = ({ resetGame }) => {
   return (
     <nav className="gamePageNav-container">
       <h1 className="gamePageNav-title">The Triad</h1>
+      <button
+        className={toggle ? "gamePageNav-rules-icon" : "gamePageNav-item"}
+        onClick={onToggle}
+      >
+        {toggle ? <XIcon className="home-icon" /> : "Rules"}
+      </button>
+      <div className={toggle ? " rules-container" : "rules-none"}>
+        <Rules />
+      </div>
       <div className="gamePageNav-menu-container">
         <div className="gamePageNav-icon-container">
           <i onClick={onGameNavIcon}>
@@ -33,6 +42,7 @@ const GamePageNavBar = ({ resetGame }) => {
             )}
           </i>
         </div>
+
         <div
           className={
             gameNavClicked
@@ -40,15 +50,6 @@ const GamePageNavBar = ({ resetGame }) => {
               : "gamePageNav-items"
           }
         >
-          <button
-            className={toggle ? "gamePageNav-rules-icon" : "gamePageNav-item"}
-            onClick={onToggle}
-          >
-            {toggle ? <XIcon className="home-icon" /> : "Rules"}
-          </button>
-          <div className={toggle ? " rules-container" : "rules-none"}>
-            <Rules />
-          </div>
           <button className="gamePageNav-item" onClick={refreshPage}>
             New Board
           </button>
