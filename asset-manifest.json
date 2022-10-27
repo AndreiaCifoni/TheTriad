@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/TheTriad/static/css/main.eada99a5.css",
-    "main.js": "/TheTriad/static/js/main.0fb21a5a.js",
+    "main.css": "/TheTriad/static/css/main.ed641b4d.css",
+    "main.js": "/TheTriad/static/js/main.685b314c.js",
     "index.html": "/TheTriad/index.html",
-    "main.eada99a5.css.map": "/TheTriad/static/css/main.eada99a5.css.map",
-    "main.0fb21a5a.js.map": "/TheTriad/static/js/main.0fb21a5a.js.map"
+    "main.ed641b4d.css.map": "/TheTriad/static/css/main.ed641b4d.css.map",
+    "main.685b314c.js.map": "/TheTriad/static/js/main.685b314c.js.map"
   },
   "entrypoints": [
-    "static/css/main.eada99a5.css",
-    "static/js/main.0fb21a5a.js"
+    "static/css/main.ed641b4d.css",
+    "static/js/main.685b314c.js"
   ]
 }
