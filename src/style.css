@@ -392,7 +392,9 @@ body {
 @media screen and (max-width: 860px) {
   .gamePageNav-icon-container {
     position: relative;
-    left: 6rem;
+    left: 5rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .gamePageNav-title {
@@ -416,6 +418,13 @@ body {
 
   .gamePageNav-rules-icon {
     width: 3rem;
+    padding: 0.1rem 0.6rem;
+    margin-left: 4rem;
+  }
+
+  .gamePageNav-rule-item {
+    padding: 0.2rem 0.4rem;
+    margin-left: 2.1rem;
   }
 
   .gamePageNav-item {
@@ -426,7 +435,7 @@ body {
     text-align: center;
     position: relative;
     top: 99px;
-    left: 20px;
+    left: -40px;
     gap: 0;
     transform: all 0.5s ease;
     border-radius: 0;
@@ -528,19 +537,19 @@ body {
 
 @media screen and (max-width: 770px) {
   .tile {
-    width: 8vw;
-    height: 8vw;
+    width: 10vw;
+    height: 10vw;
     margin: 0 0.1rem;
   }
 
   .tile-null {
-    width: 8vw;
-    height: 8vw;
+    width: 10vw;
+    height: 10vw;
     margin: 0 0.1rem;
   }
 
   .bottomHolderBar-container {
-    width: 65vw;
+    width: 75vw;
     height: 10vw;
     padding: 4px 2px;
   }

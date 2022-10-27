@@ -28,7 +28,11 @@ const GamePageNavBar = ({ resetGame }) => {
     <nav className="gamePageNav-container">
       <h1 className="gamePageNav-title">The Triad</h1>
       <button
-        className={toggle ? "gamePageNav-rules-icon" : "gamePageNav-item"}
+        className={
+          toggle
+            ? "gamePageNav-rules-icon"
+            : "gamePageNav-item gamePageNav-rule-item"
+        }
         onClick={onToggle}
       >
         {toggle ? <QuestionMarkCircleIcon className="home-icon" /> : "Rules"}
