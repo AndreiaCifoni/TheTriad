@@ -25,6 +25,7 @@ const GameApp = ({ boardLayout }) => {
           setTileLayout={setTileLayout}
           bottomHolder={bottomHolder}
           setBottomHolder={setBottomHolder}
+          resetGame={resetGame}
         />
       </div>
       <Footer />

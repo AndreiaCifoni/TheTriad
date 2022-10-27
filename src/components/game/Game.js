@@ -18,7 +18,12 @@ const Game = ({
   setTileLayout,
   bottomHolder,
   setBottomHolder,
+  resetGame,
 }) => {
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   const getTileSelected = (x, y, z) => {
     const tileUpperLevel = getTileUpperLevel(z, tileLayout);
     const isTileFree = getIsTileFree(x, y, z, tileUpperLevel);
@@ -59,11 +64,15 @@ const Game = ({
         <WinLoseCard
           title={"Game Over"}
           className={"card-container card-gameover"}
+          onClickCard={resetGame}
+          messagePlayAgain={"Try again"}
         />
       ) : isWinner(tileLayout, bottomHolder) ? (
         <WinLoseCard
           title={"Winner"}
           className={"card-container card-winner"}
+          onClickCard={refreshPage}
+          messagePlayAgain={"New Board"}
         />
       ) : (
         <div>

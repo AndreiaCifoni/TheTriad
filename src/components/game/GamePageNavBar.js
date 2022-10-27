@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../style.css";
-import { XIcon, MenuIcon } from "@heroicons/react/solid";
+import {
+  XIcon,
+  MenuIcon,
+  QuestionMarkCircleIcon,
+} from "@heroicons/react/solid";
 import Rules from "../Rules";
 
 const GamePageNavBar = ({ resetGame }) => {
@@ -27,7 +31,7 @@ const GamePageNavBar = ({ resetGame }) => {
         className={toggle ? "gamePageNav-rules-icon" : "gamePageNav-item"}
         onClick={onToggle}
       >
-        {toggle ? <XIcon className="home-icon" /> : "Rules"}
+        {toggle ? <QuestionMarkCircleIcon className="home-icon" /> : "Rules"}
       </button>
       <div className={toggle ? " rules-container" : "rules-none"}>
         <Rules />
