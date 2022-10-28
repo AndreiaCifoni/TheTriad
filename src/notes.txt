@@ -13,9 +13,5 @@
 
 
 
-------------------------------
-to be completed:
--More boards for each difficulty
--Rules btn!!!
--Random tiles
+
 
