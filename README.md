@@ -17,14 +17,18 @@ The design of the boards was made from sketch on paper so I could have an idea o
 
 The tiles should be allocated in separate objects so they can have the proper keys of title, url, and individual id. These values were going to be used to show properly the pieces on the board.
 
-Then it was decided on how each layer was going to be placed if it was going to overlap the pieces right on top of each other or with a slight shift so the player could see the underneath tile and set their strategy.
+Then it was decided on how each layer was going to be placed, if it was going to overlap the pieces right on top of each other, or with a slight shift so the player could see the underneath tile and set their strategy.
 
 Gathering all the information and the drawings, I could decide on organizing the objects in an array representing the rows of the board, then inside another array to represent the layers overlapped and the last array as the board. As the example below:
 
 const tileLevel = [
+
   [{tile}, {tile}, {tile}],
+  
   [{tile}, {tile}, {tile}],
+  
   [{tile}, {tile}, {tile}],
+  
 ];
 
 const boardLayout = [ tileLevel1, tileLevel2, tileLevel3]
