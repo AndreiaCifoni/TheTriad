@@ -32,6 +32,8 @@ const tileLevel = [
 ];
 
 const boardLayout = [ tileLevel1, tileLevel2, tileLevel3]
+
+Another structural challenge was deciding on how the Components were going to hold the content and what was their respective main role on the functionallity of the game.
     
 ### Built with
 This application was built with:
