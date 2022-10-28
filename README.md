@@ -5,6 +5,8 @@ In this modern version the tiles are disposed in a board, and when clicked they 
 
 ## About the project
 
+### Challenges
+
     
 ### Built with
 This application was buit with:
@@ -15,9 +17,9 @@ This application was buit with:
 * HTML
 
 
-
 ## Getting Started
-The project is already deployed in the link below:
+The project is deployed and it can be found in the link below:
+[The Triad](https://AndreiaCifoni.github.io/TheTriad)
 
 ## Usage
 In the Home page you can find three sections to choose between different difficulties. From the beginner to expert, the boards change in the shape and variety of tiles to be matched.
