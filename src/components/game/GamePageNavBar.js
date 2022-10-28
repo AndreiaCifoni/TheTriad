@@ -37,7 +37,7 @@ const GamePageNavBar = ({ resetGame }) => {
       >
         {toggle ? <QuestionMarkCircleIcon className="home-icon" /> : "Rules"}
       </button>
-      <div className={toggle ? " rules-container" : "rules-none"}>
+      <div className={toggle ? "rules-container" : "rules-none"}>
         <Rules />
       </div>
       <div className="gamePageNav-menu-container">

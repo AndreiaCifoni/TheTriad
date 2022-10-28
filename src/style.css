@@ -442,6 +442,33 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .gamePageNav-container {
+    height: 3.5rem;
+  }
+
+  .gamePageNav-menu-container {
+    width: 8rem;
+  }
+
+  .gamePageNav-title {
+    font-size: 1.2rem;
+  }
+
+  .gamePageNav-item {
+    font-size: 1rem;
+  }
+
+  .gamePageNav-icon {
+    width: 1.8rem;
+  }
+
+  .gamePageNav-items-cell {
+    top: 90px;
+    left: 8px;
+  }
+}
+
 /* ---------------------GameApp & Game------------------ */
 
 .gameapp-container {
