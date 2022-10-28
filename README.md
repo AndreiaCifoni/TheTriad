@@ -26,6 +26,7 @@ const tileLevel = [
   [{tile}, {tile}, {tile}],
   [{tile}, {tile}, {tile}],
 ];
+
 const boardLayout = [ tileLevel1, tileLevel2, tileLevel3]
     
 ### Built with
