@@ -13,7 +13,7 @@ During the construction of this project, I had some challenges with structure an
 
 The first big challenge was the data structure of the board. I needed to set individual characteristics to each tile and, at the same time, place each piece in a position that allowed me to give the board the desired shape.
 
-The design of the boards was made from scratch on paper so I could have an idea of how the disposition of elements was going to work on my screen.
+The design of the boards was made from sketch on paper so I could have an idea of how the disposition of elements was going to work on my screen.
 
 The tiles should be allocated in separate objects so they can have the proper keys of title, url, and individual id. These values were going to be used to show properly the pieces on the board.
 
