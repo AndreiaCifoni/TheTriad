@@ -165,11 +165,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .home-btn-container {
-    height: 50%;
-    justify-content: flex-start;
-  }
-
   .home-rules-btn {
     margin: 2rem 2rem 0 auto;
   }
