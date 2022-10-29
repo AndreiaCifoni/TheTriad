@@ -33,7 +33,17 @@ const tileLevel = [
 
 const boardLayout = [ tileLevel1, tileLevel2, tileLevel3]
 
-Another structural challenge was deciding on how the Components were going to hold the content and what was their respective main role on the functionallity of the game.
+Another structural challenge was deciding how the Components were going to hold the content and what was their respective main role in the functionality of the game.
+
+Drawing the game page and listing the activities to be performed by each individual block, for example, the bottom bar and the board, helped construct the working tree of components. In this tree, it was possible to set the parent/child components and where the functions and states were going to be placed so it could be shared for more than one element.
+
+After listing all the actions that the game has and building their respective functions, it was time for the design. 
+
+The main obstacle found in the design was the proper align the levels with the slight shift between the layers. The best choice for positioning was to work with a combination of CSS grid and flexbox.
+
+By the design, since the middle level should be shifted, the best option was to implement the className with a ternary conditional in the level element. The CSS grid was applied and the composition of the board was right how I expected. The only problem was that an HTML element, the level <div>, was on top of my tiles, preventing the bottom layer from being clicked. 
+
+After a lot of tests and research, the best approach found was to use "pointer-events" on the <div>, and in that way, I could click through the element and reach the layers underneath.
     
 ### Built with
 This application was built with:
