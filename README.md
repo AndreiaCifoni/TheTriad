@@ -5,24 +5,43 @@ The Triad is a version of the phone app Zen Match, which is inspired by the famo
 
 Once the board and the bottom bar are clean, you'll win the game!
 
+
 ________________________________________________________________________
 ## Getting Started
 The project is deployed and it can be found in the link below:
 
 [The Triad](https://AndreiaCifoni.github.io/TheTriad)
 
+
 ________________________________________________________________________
 ## Usage
-In the Home page you can find three sections to choose between different difficulties. From the beginner to expert, the boards change in the shape and variety of tiles to be matched.
+On the Home page, you can find the rules of the game and three sections to choose between different difficulties. From Beginner to Expert, the boards change in shape and variety of tiles to be matched.
 
-****photo Home Page
+![The Triad - Home page](https://res.cloudinary.com/deiacifoni/image/upload/v1667093567/fruits/screen1_h9smrm.jpg)
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093568/fruits/screen2_d4ajys.jpg)
 
-Each board has a nav bar with a Restart button to start the game all over and a Home button to come back to the Home page.
+Each board has a Navbar with the buttons:  
+  * Rules, which reviews the game objectives during the game.
+  * New Board, which will shuffle between 3 different shapes in each difficulty.
+  * Restart, which starts the same board.
+  * Home, to come back to the Home page.
+  
+By clicking the tiles on the board, they will be placed in the bottom bar until three similar figures are selected.
 
-****photo board with game going on
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093568/fruits/screen3_fnb1xb.jpg)
 
-When the game is lost, you can either Restart or come back to the Home to change the level of difficulty.
-And when the tiles are cleaned from the board, a new board is open for play.
+The game will be over if the bottom bar is full and the 7th tile selected does not complete a triad. Then you can play that board again or return to the Home page.
+
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093567/fruits/screen5_sdlxlz.jpg)
+
+The winning card will appear for those who complete all the triads in the game. Then you can select a new board or return to the Home page.
+
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093567/fruits/screen4_ybdppl.jpg)
+
+This game was also reframed to be responsive on the mobile phone.
+
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093568/fruits/screen7_alvhju.jpg)
+
 
 ________________________________________________________________________
 ## About the project
@@ -50,7 +69,7 @@ const tileLevel = [
   
 ];
 
-const boardLayout = [ tileLevel1, tileLevel2, tileLevel3]
+const boardLayout = [ tileLevel1, tileLevel2, tileLevel3];
 
 
 Another structural challenge was deciding how the Components were going to hold the content and what was their respective main role in the functionality of the game.
@@ -74,6 +93,7 @@ This application was built with:
 * React
 * CSS
 * HTML
+
 
 ________________________________________________________________________
 ## Contact
