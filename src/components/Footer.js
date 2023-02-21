@@ -10,6 +10,7 @@ const Footer = () => {
           <a
             className="footer-link"
             href="mailto:andreiacifoni@gmail.com?subject='subject text'"
+            target="_blank"
           >
             <ion-icon
               className="footer-social-icon"
@@ -21,6 +22,7 @@ const Footer = () => {
           <a
             className="footer-link"
             href="https://linkedin.com/in/andreiacifoni"
+            target="_blank"
           >
             <ion-icon
               className="footer-social-icon"
@@ -29,7 +31,11 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a className="footer-link" href="https://github.com/AndreiaCifoni">
+          <a
+            className="footer-link"
+            href="https://github.com/AndreiaCifoni"
+            target="_blank"
+          >
             <ion-icon
               className="footer-social-icon"
               name="logo-github"
