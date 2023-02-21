@@ -1,11 +1,49 @@
 # The Triad
 This game is for all puzzle lovers! 
 
-The Triad is a version of the phone app Zen Match, which is inspired by the famous Mahjong. In this modern version, the tiles are placed on a board, and when clicked, they will go the bottom bar. But be careful! The bar can only hold "safely" 6 tiles, and in the 7th, the game is over! When three similar tiles are selected, they vanish from the bar. 
+The Triad is a version of the phone app Zen Match, which is inspired by the famous Mahjong. In this modern version, the tiles are placed on a board, and when clicked, they will go to the bottom bar. But be careful! The bar can only hold "safely" 6 tiles, and in the 7th, the game is over! When three similar tiles are selected, they vanish from the bar. 
 
 Once the board and the bottom bar are clean, you'll win the game!
 
 
+________________________________________________________________________
+## Getting Started
+The project is deployed and it can be found in the link below:
+
+[The Triad](https://AndreiaCifoni.github.io/TheTriad)
+
+
+________________________________________________________________________
+## Usage
+On the Home page, you can find the rules of the game and three sections to choose between different difficulties. From Beginner to Expert, the boards change in shape and variety of tiles to be matched.
+
+![The Triad - Home page](https://res.cloudinary.com/deiacifoni/image/upload/v1667093567/fruits/screen1_h9smrm.jpg)
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093568/fruits/screen2_d4ajys.jpg)
+
+Each board has a Navbar with the buttons:  
+  * Rules, which reviews the game objectives during the game.
+  * New Board, which will shuffle between 3 different shapes in each difficulty.
+  * Restart, which starts the same board.
+  * Home, to come back to the Home page.
+  
+By clicking the tiles on the board, they will be placed in the bottom bar until three similar figures are selected.
+
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093568/fruits/screen3_fnb1xb.jpg)
+
+The game will be over if the bottom bar is full and the 7th tile selected does not complete a triad. Then you can play that board again or return to the Home page.
+
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093567/fruits/screen5_sdlxlz.jpg)
+
+The winning card will appear for those who complete all the triads in the game. Then you can select a new board or return to the Home page.
+
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093567/fruits/screen4_ybdppl.jpg)
+
+This game was also reframed to be responsive on the mobile phone.
+
+![The Triad - Rules](https://res.cloudinary.com/deiacifoni/image/upload/v1667093568/fruits/screen7_alvhju.jpg)
+
+
+________________________________________________________________________
 ## About the project
 
 ### Challenges
@@ -31,7 +69,8 @@ const tileLevel = [
   
 ];
 
-const boardLayout = [ tileLevel1, tileLevel2, tileLevel3]
+const boardLayout = [ tileLevel1, tileLevel2, tileLevel3];
+
 
 Another structural challenge was deciding how the Components were going to hold the content and what was their respective main role in the functionality of the game.
 
@@ -39,11 +78,13 @@ Drawing the game page and listing the activities to be performed by each individ
 
 After listing all the actions that the game has and building their respective functions, it was time for the design. 
 
-The main obstacle found in the design was the proper align the levels with the slight shift between the layers. The best choice for positioning was to work with a combination of CSS grid and flexbox.
+The main obstacle found in the design was to properly align the levels with the slight shift between the layers. The best choice for positioning was to work with a combination of CSS grid and flexbox.
 
-By the design, since the middle level should be shifted, the best option was to implement the className with a ternary conditional in the level element. The CSS grid was applied and the composition of the board was right how I expected. The only problem was that an HTML element, the level <div>, was on top of my tiles, preventing the bottom layer from being clicked. 
+By the design, since the middle level should be shifted, the best option was to implement the className with a ternary conditional in the level element. The CSS grid was applied and the composition of the board was right how I expected. The only problem was that an HTML element, the level `<div>`, was on top of my tiles, preventing the bottom layer from being clicked. 
 
-After a lot of tests and research, the best approach found was to use "pointer-events" on the <div>, and in that way, I could click through the element and reach the layers underneath.
+After a lot of tests and research, the best approach found was to use "pointer-events" on the `<div>`, and in that way, I could click through the element and reach the layers underneath.
+
+The project was finished by adjusting all the elements and making the media query for mobile responsiveness.
     
 ### Built with
 This application was built with:
@@ -54,31 +95,10 @@ This application was built with:
 * HTML
 
 
-## Getting Started
-The project is deployed and it can be found in the link below:
-[The Triad](https://AndreiaCifoni.github.io/TheTriad)
-
-## Usage
-In the Home page you can find three sections to choose between different difficulties. From the beginner to expert, the boards change in the shape and variety of tiles to be matched.
-
-****photo Home Page
-
-Each board has a nav bar with a Restart button to start the game all over and a Home button to come back to the Home page.
-
-****photo board with game going on
-
-When the game is lost, you can either Restart or come back to the Home to change the level of difficulty.
-And when the tiles are cleaned from the board, a new board is open for play.
-
-
+________________________________________________________________________
 ## Contact
 Andreia Cifoni - andreiacifoni@gmail.com
 
-
-## Acknowledgments
-Helpful resources used during the constructions of the page:
-- 
-
-
+Linkedin: https://linkedin.com/in/andreiacifoni
 
 
